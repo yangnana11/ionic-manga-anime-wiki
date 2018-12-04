@@ -1,0 +1,7 @@
+{
+  "name": "goodread",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
