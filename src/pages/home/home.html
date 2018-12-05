@@ -1,17 +1,58 @@
 <ion-header>
-  <ion-toolbar color="#F4F1EA">
-    <ion-searchbar placeholder="Search by title, author or tag"></ion-searchbar>
-  </ion-toolbar>
+    <ion-toolbar color="#F4F1EA">
+        <ion-searchbar placeholder="Search by title, author or tag"></ion-searchbar>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+    <ion-card>
+
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/marty-avatar.png">
+            </ion-avatar>
+            <h2 text-wrap><span class="focus-label">Thao Tran</span> gave 5 stars to <span class="focus-label">One Punch Man</span>
+                by <span class="focus-label">One</span></h2>
+            <p class="desp-label">November 5, 1955</p>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+                <img src="assets/imgs/thumbnail-totoro.png">
+            </ion-thumbnail>
+            <h2>My Neighbor Totoro</h2>
+            <p class="desp-label">by Hayao Miyazaki • 1988</p>
+            <button class="shelf-button">
+                Want to Read
+                <button class="shelf-arrow">
+                    <ion-icon name="arrow-down"></ion-icon>
+                </button>
+            </button>
+            <p class="rating">Rate this manga:
+                <button (click)="openRateMenu()">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                </button>
+            </p>
+        </ion-item>
+
+        <ion-row>
+            <ion-col>
+                <button ion-button icon-start clear small>
+                    <ion-icon name="thumbs-up"></ion-icon>
+                    <div>12 Likes</div>
+                </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button icon-start clear small>
+                    <ion-icon name="text"></ion-icon>
+                    <div>4 Comments</div>
+                </button>
+            </ion-col>
+        </ion-row>
+
+    </ion-card>
 </ion-content>

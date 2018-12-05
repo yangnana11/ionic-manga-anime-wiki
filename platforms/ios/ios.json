@@ -55,22 +55,22 @@
   },
   "installed_plugins": {
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "yang.wiki"
     },
     "cordova-plugin-ionic-keyboard": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "yang.wiki"
     },
     "cordova-plugin-ionic-webview": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "yang.wiki"
     },
     "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "yang.wiki"
     },
     "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "yang.wiki"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "yang.wiki"
     }
   },
   "dependent_plugins": {},

@@ -25673,3 +25673,92 @@ ion-navbar.toolbar {
   min-height: calc(46px + constant(safe-area-inset-bottom));
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
+
+page-home .focus-label {
+  color: #005959;
+}
+
+page-home .desp-label {
+  color: #8c8c8c;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+page-home .rating {
+  color: #8c8c8c;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+page-home .rating [name^=star] {
+  font-size: 12px;
+}
+
+page-home .rating button {
+  background-color: transparent;
+}
+
+page-home .rating-popup {
+  text-align: center;
+}
+
+page-home .shelf-button {
+  background-color: #4ca64c;
+  color: white;
+  margin-top: 10px;
+  width: 140px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+page-home .shelf-button * {
+  background-color: transparent;
+  color: white;
+  padding: 4px;
+}
+
+page-home .shelf-button .shelf-arrow {
+  border-left: 1px solid #449544;
+  margin-left: 7px;
+  padding-left: 10px;
+}
+
+.ion-ios-star-rating1:before, .ion-md-star-rating1:before {
+  content: "\f384";
+}
+
+.ion-ios-star-rating2:before, .ion-md-star-rating2:before {
+  content: "\f384 \f384";
+}
+
+.ion-ios-star-rating3:before, .ion-md-star-rating3:before {
+  content: "\f384 \f384 \f384";
+}
+
+.ion-ios-star-rating4:before, .ion-md-star-rating4:before {
+  content: "\f384 \f384 \f384 \f384";
+}
+
+.ion-ios-star-rating5:before, .ion-md-star-rating5:before {
+  content: "\f384 \f384 \f384 \f384 \f384";
+}
+
+.ion-md-star-rating1 {
+  width: 0px !important;
+}
+
+.ion-md-star-rating2 {
+  width: 10px !important;
+}
+
+.ion-md-star-rating3 {
+  width: 30px !important;
+}
+
+.ion-md-star-rating4 {
+  width: 50px !important;
+}
+
+.ion-md-star-rating5 {
+  width: 70px !important;
+}
