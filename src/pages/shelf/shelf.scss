@@ -1,0 +1,17 @@
+page-shelf {
+  .desp-label {
+    color: $label-grey-color;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .shelf-item {
+    display: flex !important;
+  }
+  .remove-button {
+    position: absolute;
+    bottom: 10px;
+    background: none;
+    color: $label-grey-color;
+    border: 1px solid $border-grey-color;
+  }
+}

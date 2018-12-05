@@ -1,5 +1,6 @@
 import { Component } from '@angular/core'
-import { NavController, ActionSheetController } from 'ionic-angular'
+import { NavController, ActionSheetController, ModalController } from 'ionic-angular'
+import { ShelfPage } from '../shelf/shelf'
 
 @Component({
     selector: 'page-home',
@@ -9,7 +10,8 @@ export class HomePage {
 
     constructor (
         public navCtrl: NavController,
-        public actionsheetCtrl: ActionSheetController
+        public actionsheetCtrl: ActionSheetController,
+        public modalCtrl: ModalController
     ) { }
 
     openRateMenu () {
@@ -62,6 +64,11 @@ export class HomePage {
             ]
         })
         actionSheet.present()
+    }
+
+    showShelf(characterNum) {
+        let modal = this.modalCtrl.create(ShelfPage, characterNum);
+        modal.present();
     }
 
 }

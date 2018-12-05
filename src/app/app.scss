@@ -14,3 +14,30 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+$label-grey-color: #8c8c8c;
+$border-grey-color: #d1d1d1;
+$button-green-color: #4ca64c;
+$border-green-color: #449544;
+$label-green-color: #005959;
+
+.ion-ios-star-rating1:before, .ion-md-star-rating1:before{content:"\f384"}
+.ion-ios-star-rating2:before, .ion-md-star-rating2:before{content:"\f384 \f384"}
+.ion-ios-star-rating3:before, .ion-md-star-rating3:before{content:"\f384 \f384 \f384"}
+.ion-ios-star-rating4:before, .ion-md-star-rating4:before{content:"\f384 \f384 \f384 \f384"}
+.ion-ios-star-rating5:before, .ion-md-star-rating5:before{content:"\f384 \f384 \f384 \f384 \f384"}
+.ion-md-star-rating1 {
+  width: 0px !important;
+}
+.ion-md-star-rating2 {
+  width: 10px !important;
+}
+.ion-md-star-rating3 {
+  width: 30px !important;
+}
+.ion-md-star-rating4 {
+  width: 50px !important;
+}
+.ion-md-star-rating5 {
+  width: 70px !important;
+}

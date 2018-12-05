@@ -25674,6 +25674,46 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+.ion-ios-star-rating1:before, .ion-md-star-rating1:before {
+  content: "\f384";
+}
+
+.ion-ios-star-rating2:before, .ion-md-star-rating2:before {
+  content: "\f384 \f384";
+}
+
+.ion-ios-star-rating3:before, .ion-md-star-rating3:before {
+  content: "\f384 \f384 \f384";
+}
+
+.ion-ios-star-rating4:before, .ion-md-star-rating4:before {
+  content: "\f384 \f384 \f384 \f384";
+}
+
+.ion-ios-star-rating5:before, .ion-md-star-rating5:before {
+  content: "\f384 \f384 \f384 \f384 \f384";
+}
+
+.ion-md-star-rating1 {
+  width: 0px !important;
+}
+
+.ion-md-star-rating2 {
+  width: 10px !important;
+}
+
+.ion-md-star-rating3 {
+  width: 30px !important;
+}
+
+.ion-md-star-rating4 {
+  width: 50px !important;
+}
+
+.ion-md-star-rating5 {
+  width: 70px !important;
+}
+
 page-home .focus-label {
   color: #005959;
 }
@@ -25723,42 +25763,23 @@ page-home .shelf-button .shelf-arrow {
   padding-left: 10px;
 }
 
-.ion-ios-star-rating1:before, .ion-md-star-rating1:before {
-  content: "\f384";
+page-shelf .desp-label {
+  color: #8c8c8c;
+  margin-top: 10px;
+  font-size: 14px;
 }
 
-.ion-ios-star-rating2:before, .ion-md-star-rating2:before {
-  content: "\f384 \f384";
+page-shelf .shelf-item {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-.ion-ios-star-rating3:before, .ion-md-star-rating3:before {
-  content: "\f384 \f384 \f384";
-}
-
-.ion-ios-star-rating4:before, .ion-md-star-rating4:before {
-  content: "\f384 \f384 \f384 \f384";
-}
-
-.ion-ios-star-rating5:before, .ion-md-star-rating5:before {
-  content: "\f384 \f384 \f384 \f384 \f384";
-}
-
-.ion-md-star-rating1 {
-  width: 0px !important;
-}
-
-.ion-md-star-rating2 {
-  width: 10px !important;
-}
-
-.ion-md-star-rating3 {
-  width: 30px !important;
-}
-
-.ion-md-star-rating4 {
-  width: 50px !important;
-}
-
-.ion-md-star-rating5 {
-  width: 70px !important;
+page-shelf .remove-button {
+  position: absolute;
+  bottom: 10px;
+  background: none;
+  color: #8c8c8c;
+  border: 1px solid #d1d1d1;
 }

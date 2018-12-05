@@ -1,14 +1,14 @@
 page-home {
   .focus-label {
-    color: #005959;
+    color: $label-green-color;
   }
   .desp-label {
-    color: #8c8c8c;
+    color: $label-grey-color;
     margin-top: 10px;
     font-size: 14px;
   }
   .rating {
-    color: #8c8c8c;
+    color: $label-grey-color;
     margin-top: 10px;
     font-size: 14px;
     [name^=star] {
@@ -22,7 +22,7 @@ page-home {
     text-align: center;
   }
   .shelf-button {
-    background-color: #4ca64c;
+    background-color: $button-green-color;
     color: white;
     margin-top: 10px;
     width: 140px;
@@ -36,30 +36,10 @@ page-home {
       padding: 4px;
     }
     .shelf-arrow {
-      border-left: 1px solid #449544;
+      border-left: 1px solid $border-green-color;
       margin-left: 7px;
       padding-left: 10px;
       //padding-top: 5px;
     }
   }
-}
-.ion-ios-star-rating1:before, .ion-md-star-rating1:before{content:"\f384"}
-.ion-ios-star-rating2:before, .ion-md-star-rating2:before{content:"\f384 \f384"}
-.ion-ios-star-rating3:before, .ion-md-star-rating3:before{content:"\f384 \f384 \f384"}
-.ion-ios-star-rating4:before, .ion-md-star-rating4:before{content:"\f384 \f384 \f384 \f384"}
-.ion-ios-star-rating5:before, .ion-md-star-rating5:before{content:"\f384 \f384 \f384 \f384 \f384"}
-.ion-md-star-rating1 {
-  width: 0px !important;
-}
-.ion-md-star-rating2 {
-  width: 10px !important;
-}
-.ion-md-star-rating3 {
-  width: 30px !important;
-}
-.ion-md-star-rating4 {
-  width: 50px !important;
-}
-.ion-md-star-rating5 {
-  width: 70px !important;
 }
