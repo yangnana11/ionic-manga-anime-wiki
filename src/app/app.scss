@@ -16,6 +16,7 @@
 // automatically applied to the <body> element in the app.
 
 $label-grey-color: #8c8c8c;
+$button-grey-color: #e8e8e8;
 $border-grey-color: #d1d1d1;
 $button-green-color: #4ca64c;
 $border-green-color: #449544;
@@ -40,4 +41,8 @@ $label-green-color: #005959;
 }
 .ion-md-star-rating5 {
   width: 70px !important;
+}
+.tab-button[aria-selected=true], .tab-button[aria-selected=true] .tab-button-icon {
+  color: $label-green-color !important;
+
 }

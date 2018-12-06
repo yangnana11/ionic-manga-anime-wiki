@@ -25674,55 +25674,6 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-page-home .focus-label {
-  color: #005959;
-}
-
-page-home .desp-label {
-  color: #8c8c8c;
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-page-home .rating {
-  color: #8c8c8c;
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-page-home .rating [name^=star] {
-  font-size: 12px;
-}
-
-page-home .rating button {
-  background-color: transparent;
-}
-
-page-home .rating-popup {
-  text-align: center;
-}
-
-page-home .shelf-button {
-  background-color: #4ca64c;
-  color: white;
-  margin-top: 10px;
-  width: 140px;
-  border-radius: 4px;
-  font-size: 13px;
-}
-
-page-home .shelf-button * {
-  background-color: transparent;
-  color: white;
-  padding: 4px;
-}
-
-page-home .shelf-button .shelf-arrow {
-  border-left: 1px solid #449544;
-  margin-left: 7px;
-  padding-left: 10px;
-}
-
 .ion-ios-star-rating1:before, .ion-md-star-rating1:before {
   content: "\f384";
 }
@@ -25761,4 +25712,139 @@ page-home .shelf-button .shelf-arrow {
 
 .ion-md-star-rating5 {
   width: 70px !important;
+}
+
+.tab-button[aria-selected=true], .tab-button[aria-selected=true] .tab-button-icon {
+  color: #005959 !important;
+}
+
+page-home .focus-label {
+  color: #005959;
+}
+
+page-home .desp-label {
+  color: #8c8c8c;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+page-home .rating {
+  color: #8c8c8c;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+page-home .rating [name^=star] {
+  font-size: 12px;
+}
+
+page-home .rating button {
+  background-color: transparent;
+}
+
+page-home .rating-popup {
+  text-align: center;
+}
+
+page-home .social {
+  color: #005959;
+}
+
+.ios .shelf-button {
+  background-color: #4ca64c;
+  color: white;
+  margin-top: 10px;
+  padding-right: 5px !important;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.ios .shelf-button * {
+  background-color: transparent;
+  color: white;
+  padding: 4px;
+}
+
+.ios .shelf-button .shelf-arrow {
+  border-left: 1px solid #449544;
+  margin-left: 7px;
+  padding-left: 10px;
+}
+
+.ios .shelf-button-added {
+  background-color: #e8e8e8;
+  margin-top: 10px;
+  padding-right: 5px !important;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.ios .shelf-button-added * {
+  background-color: transparent;
+  padding: 4px;
+}
+
+.ios .shelf-button-added .shelf-arrow {
+  border-left: 1px solid #d1d1d1;
+  margin-left: 7px;
+  padding-left: 10px;
+}
+
+.md .shelf-button {
+  background-color: #4ca64c;
+  color: white;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.md .shelf-button * {
+  background-color: transparent;
+  color: white;
+  padding: 4px;
+}
+
+.md .shelf-button .shelf-arrow {
+  border-left: 1px solid #449544;
+  margin-left: 7px;
+  padding-left: 10px;
+}
+
+.md .shelf-button-added {
+  background-color: #e8e8e8;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.md .shelf-button-added * {
+  background-color: transparent;
+  padding: 4px;
+}
+
+.md .shelf-button-added .shelf-arrow {
+  border-left: 1px solid #d1d1d1;
+  margin-left: 7px;
+  padding-left: 10px;
+}
+
+page-shelf .desp-label {
+  color: #8c8c8c;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+page-shelf .shelf-item {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+page-shelf .remove-button {
+  position: absolute;
+  bottom: 10px;
+  background: none;
+  color: #8c8c8c;
+  border: 1px solid #d1d1d1;
 }

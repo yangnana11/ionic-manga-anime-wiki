@@ -1,4 +1,4 @@
-#Wed Dec 05 14:15:30 KST 2018
+#Wed Dec 05 18:29:31 KST 2018
 base.0=/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

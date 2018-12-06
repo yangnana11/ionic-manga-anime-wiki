@@ -5,51 +5,75 @@
 </ion-header>
 
 <ion-content>
-    <ion-card>
+    <ion-card *ngFor="let friend of friends">
 
         <ion-item>
             <ion-avatar item-start>
-                <img src="assets/imgs/marty-avatar.png">
+                <img src="{{friend.ava}}">
             </ion-avatar>
-            <h2 text-wrap><span class="focus-label">Thao Tran</span> gave 5 stars to <span class="focus-label">One Punch Man</span>
-                by <span class="focus-label">One</span></h2>
-            <p class="desp-label">November 5, 1955</p>
+            <h2 text-wrap><span class="focus-label">{{friend.name}}</span> gave {{friend.item.star}} stars to <span
+                    class="focus-label">{{friend.item.title}}</span>
+                by <span class="focus-label">{{friend.item.author}}</span></h2>
+            <p class="desp-label">{{friend.item.timeOfRate}}</p>
         </ion-item>
 
         <ion-item>
             <ion-thumbnail item-start>
-                <img src="assets/imgs/thumbnail-totoro.png">
+                <img src="{{friend.item.image}}">
             </ion-thumbnail>
-            <h2>My Neighbor Totoro</h2>
-            <p class="desp-label">by Hayao Miyazaki • 1988</p>
-            <button class="shelf-button">
-                Want to Read
+            <h2>{{friend.item.title}}</h2>
+            <p class="desp-label">by {{friend.item.author}} • {{friend.item.publishYear}}</p>
+            <button *ngIf="(friend.item.myConnection | json) == '{}'" class="shelf-button">
+                Add to checklist
+                <button class="shelf-arrow" (click)="showShelf({charNum: 0})">
+                    <ion-icon name="arrow-down"></ion-icon>
+                </button>
+            </button>
+            <button *ngIf="(friend.item.myConnection | json) != '{}'" class="shelf-button-added">
+                My manga
                 <button class="shelf-arrow" (click)="showShelf({charNum: 0})">
                     <ion-icon name="arrow-down"></ion-icon>
                 </button>
             </button>
             <p class="rating">Rate this manga:
                 <button (click)="openRateMenu()">
-                    <ion-icon name="star-outline"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                </button>
+                    <ng-template
+                            *ngIf="1<=friend.item.star;then rated; else notRate">
+                    </ng-template>
+                    <ng-template
+                            *ngIf="2<=friend.item.star;then rated; else notRate">
+                    </ng-template>
+                    <ng-template
+                            *ngIf="3<=friend.item.star;then rated; else notRate">
+                    </ng-template>
+                    <ng-template
+                            *ngIf="4<=friend.item.star;then rated; else notRate">
+                    </ng-template>
+                    <ng-template
+                            *ngIf="5<=friend.item.star;then rated; else notRate">
+                    </ng-template>
+                    <ng-template #rated>
+                        <ion-icon name="star"></ion-icon>
+                    </ng-template>
+
+                    <ng-template #notRate>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </ng-template>
+            </button>
             </p>
         </ion-item>
 
         <ion-row>
             <ion-col>
-                <button ion-button icon-start clear small>
+                <button ion-button icon-start clear small class="social">
                     <ion-icon name="thumbs-up"></ion-icon>
-                    <div>12 Likes</div>
+                    <div>{{friend.item.noLike}} Likes</div>
                 </button>
             </ion-col>
             <ion-col>
-                <button ion-button icon-start clear small>
+                <button ion-button icon-start clear small class="social">
                     <ion-icon name="text"></ion-icon>
-                    <div>4 Comments</div>
+                    <div>{{friend.item.noComment}} Comments</div>
                 </button>
             </ion-col>
         </ion-row>
