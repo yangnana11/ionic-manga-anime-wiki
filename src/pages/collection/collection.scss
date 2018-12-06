@@ -49,6 +49,48 @@ page-collection {
       margin-top: $margin-top-bottom;
     }
   }
+  .shelf-item {
+    margin: $margin-top-bottom $margin-left-right;
+    border-bottom: 1px solid $border-grey-color;
+    display: flex;
+    .shelf-thumbnail {
+      margin: auto $margin-left-right;
+      height: 80px;
+      width: 120px;
+      overflow: hidden;
+      ion-thumbnail {
+        img {
+          object-fit: fill;
+          height: 80px;
+          width: 60px;
+        }
+      }
+      .back1 {
+        margin-top: -70px;
+        margin-left: 10px;
+        position: relative;
+        z-index: -1;
+      }
+      .back2 {
+        margin-top: -60px;
+        margin-left: 20px;
+        position: relative;
+        z-index: -2;
+      }
+    }
+    .shelf-desp {
+      padding: 0 !important;
+      .shelf-title {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .shelf-desp {
+        margin-top: -15px;
+        font-size: 12px;
+        color: $label-grey-color;
+      }
+    }
+  }
 }
 .item-inner {
   border: none !important;

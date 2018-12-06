@@ -34,4 +34,21 @@
       </ion-item>
     </ion-slide>
   </ion-slides>
+  <div *ngFor="let shelf of shelves" class="shelf-item">
+    <div class="shelf-thumbnail">
+      <ion-thumbnail>
+        <img src="{{shelf.items[0].image}}">
+      </ion-thumbnail>
+      <ion-thumbnail *ngIf="shelf.items.length > 1" class="back1">
+        <img src="{{shelf.items[1].image}}">
+      </ion-thumbnail>
+      <ion-thumbnail *ngIf="shelf.items.length > 2" class="back2">
+        <img src="{{shelf.items[2].image}}">
+      </ion-thumbnail>
+    </div>
+    <div class="shelf-desp">
+      <p class="shelf-title">{{shelf.name}}</p>
+      <p class="shelf-desp">{{shelf.no_books}} items</p>
+    </div>
+  </div>
 </ion-content>

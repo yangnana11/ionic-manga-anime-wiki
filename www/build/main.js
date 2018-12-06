@@ -340,15 +340,74 @@ var CollectionPage = /** @class */ (function () {
                 author: 'One'
             }
         ];
+        this.shelves = [
+            {
+                name: 'My manga',
+                no_books: 186,
+                items: [
+                    {
+                        title: 'One Punch Man',
+                        image: 'assets/imgs/thumbnail-totoro.png',
+                        author: 'One'
+                    },
+                    {
+                        title: 'One Punch Man',
+                        image: 'assets/imgs/thumbnail-totoro.png',
+                        author: 'One'
+                    },
+                    {
+                        title: 'One Punch Man',
+                        image: 'assets/imgs/advance-card-bttf.png',
+                        author: 'One'
+                    }
+                ]
+            },
+            {
+                name: 'My anime',
+                no_books: 138,
+                items: [
+                    {
+                        title: 'One Punch Man',
+                        image: 'assets/imgs/thumbnail-totoro.png',
+                        author: 'One'
+                    },
+                    {
+                        title: 'One Punch Man',
+                        image: 'assets/imgs/thumbnail-totoro.png',
+                        author: 'One'
+                    },
+                    {
+                        title: 'One Punch Man',
+                        image: 'assets/imgs/advance-card-bttf.png',
+                        author: 'One'
+                    }
+                ]
+            },
+            {
+                name: 'My novel',
+                no_books: 2,
+                items: [
+                    {
+                        title: 'One Punch Man',
+                        image: 'assets/imgs/thumbnail-totoro.png',
+                        author: 'One'
+                    },
+                    {
+                        title: 'One Punch Man',
+                        image: 'assets/imgs/advance-card-bttf.png',
+                        author: 'One'
+                    }
+                ]
+            }
+        ];
     }
     CollectionPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-collection',template:/*ion-inline-start:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/collection/collection.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="header-title">\n      My Collection\n    </ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="add"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-searchbar placeholder="Search in your shelves" class="search-box"></ion-searchbar>\n  <div class="my-latest">\n    <span>my latest added items:</span>\n    <span class="see-more">see all</span>\n  </div>\n  <ion-slides class="slide-wrap">\n    <ion-slide *ngFor="let item of latest">\n      <!--<div style=\'background-image: url("assets/imgs/thumbnail-totoro.png"); width: 100%; height: 100px\'></div>-->\n      <!--<ion-item [style.backgroundImage]="\'url(\'+item.image+\')\'">-->\n      <div class="slide-border">\n        <div [ngStyle]="{\'background-image\': \'url(\' + item.image + \')\'}" class="slide">\n        </div>\n      </div>\n      <ion-item class="slide-item">\n        <ion-thumbnail item-start>\n          <img src="{{item.image}}">\n        </ion-thumbnail>\n        <h2>{{item.title}}</h2>\n        <p class="desp">by {{item.author}}</p>\n      </ion-item>\n    </ion-slide>\n  </ion-slides>\n</ion-content>\n'/*ion-inline-end:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/collection/collection.html"*/
+            selector: 'page-collection',template:/*ion-inline-start:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/collection/collection.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="header-title">\n      My Collection\n    </ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="add"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-searchbar placeholder="Search in your shelves" class="search-box"></ion-searchbar>\n  <div class="my-latest">\n    <span>my latest added items:</span>\n    <span class="see-more">see all</span>\n  </div>\n  <ion-slides class="slide-wrap">\n    <ion-slide *ngFor="let item of latest">\n      <!--<div style=\'background-image: url("assets/imgs/thumbnail-totoro.png"); width: 100%; height: 100px\'></div>-->\n      <!--<ion-item [style.backgroundImage]="\'url(\'+item.image+\')\'">-->\n      <div class="slide-border">\n        <div [ngStyle]="{\'background-image\': \'url(\' + item.image + \')\'}" class="slide">\n        </div>\n      </div>\n      <ion-item class="slide-item">\n        <ion-thumbnail item-start>\n          <img src="{{item.image}}">\n        </ion-thumbnail>\n        <h2>{{item.title}}</h2>\n        <p class="desp">by {{item.author}}</p>\n      </ion-item>\n    </ion-slide>\n  </ion-slides>\n  <div *ngFor="let shelf of shelves" class="shelf-item">\n    <div class="shelf-thumbnail">\n      <ion-thumbnail>\n        <img src="{{shelf.items[0].image}}">\n      </ion-thumbnail>\n      <ion-thumbnail *ngIf="shelf.items.length > 1" class="back1">\n        <img src="{{shelf.items[1].image}}">\n      </ion-thumbnail>\n      <ion-thumbnail *ngIf="shelf.items.length > 2" class="back2">\n        <img src="{{shelf.items[2].image}}">\n      </ion-thumbnail>\n    </div>\n    <div class="shelf-desp">\n      <p class="shelf-title">{{shelf.name}}</p>\n      <p class="shelf-desp">{{shelf.no_books}} items</p>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/collection/collection.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], CollectionPage);
     return CollectionPage;
-    var _a;
 }());
 
 //# sourceMappingURL=collection.js.map

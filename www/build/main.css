@@ -25674,6 +25674,13 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+@font-face {
+  font-family: "Comic Sans MS";
+  src: local("Comic Sans MS"), url("../assets/fonts/ComicSansMS3.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .ion-ios-star-rating1:before, .ion-md-star-rating1:before {
   content: "\f384";
 }
@@ -25716,6 +25723,10 @@ ion-navbar.toolbar {
 
 .tab-button[aria-selected=true], .tab-button[aria-selected=true] .tab-button-icon {
   color: #005959 !important;
+}
+
+ion-app.md, ion-app.ios {
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
 }
 
 page-collection .header-title {
@@ -25770,6 +25781,58 @@ page-collection .slide-item .desp {
   color: white;
   font-size: 12px;
   margin-top: 10px;
+}
+
+page-collection .shelf-item {
+  margin: 10px 8px;
+  border-bottom: 1px solid #d1d1d1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+page-collection .shelf-item .shelf-thumbnail {
+  margin: auto 8px;
+  height: 80px;
+  width: 120px;
+  overflow: hidden;
+}
+
+page-collection .shelf-item .shelf-thumbnail ion-thumbnail img {
+  -o-object-fit: fill;
+  object-fit: fill;
+  height: 80px;
+  width: 60px;
+}
+
+page-collection .shelf-item .shelf-thumbnail .back1 {
+  margin-top: -70px;
+  margin-left: 10px;
+  position: relative;
+  z-index: -1;
+}
+
+page-collection .shelf-item .shelf-thumbnail .back2 {
+  margin-top: -60px;
+  margin-left: 20px;
+  position: relative;
+  z-index: -2;
+}
+
+page-collection .shelf-item .shelf-desp {
+  padding: 0 !important;
+}
+
+page-collection .shelf-item .shelf-desp .shelf-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+page-collection .shelf-item .shelf-desp .shelf-desp {
+  margin-top: -15px;
+  font-size: 12px;
+  color: #8c8c8c;
 }
 
 .item-inner {

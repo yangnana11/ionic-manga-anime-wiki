@@ -15,6 +15,12 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+@font-face {
+  font-family: "Comic Sans MS";
+  src: local("Comic Sans MS"), url("../assets/fonts/ComicSansMS3.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal
+}
 $label-lightgrey-color: #e5e5e5;
 $label-grey-color: #8c8c8c;
 $button-grey-color: #e8e8e8;
@@ -49,4 +55,7 @@ $border-radius: 4px;
 .tab-button[aria-selected=true], .tab-button[aria-selected=true] .tab-button-icon {
   color: $label-green-color !important;
 
+}
+ion-app.md, ion-app.ios {
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
 }
