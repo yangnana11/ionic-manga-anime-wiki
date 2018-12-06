@@ -15,12 +15,16 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+$label-lightgrey-color: #e5e5e5;
 $label-grey-color: #8c8c8c;
 $button-grey-color: #e8e8e8;
 $border-grey-color: #d1d1d1;
 $button-green-color: #4ca64c;
 $border-green-color: #449544;
 $label-green-color: #005959;
+$margin-left-right: 8px;
+$margin-top-bottom: 10px;
+$border-radius: 4px;
 
 .ion-ios-star-rating1:before, .ion-md-star-rating1:before{content:"\f384"}
 .ion-ios-star-rating2:before, .ion-md-star-rating2:before{content:"\f384 \f384"}

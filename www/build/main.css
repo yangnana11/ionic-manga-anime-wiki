@@ -25718,6 +25718,64 @@ ion-navbar.toolbar {
   color: #005959 !important;
 }
 
+page-collection .header-title {
+  text-align: center;
+  margin-left: 30px;
+}
+
+page-collection .search-box {
+  margin: 10px 0px;
+}
+
+page-collection .my-latest {
+  text-transform: uppercase;
+  padding: 0 8px;
+}
+
+page-collection .my-latest .see-more {
+  position: absolute;
+  font-weight: 500;
+  color: #005959;
+  right: 8px;
+}
+
+page-collection .slide-wrap {
+  height: 120px !important;
+}
+
+page-collection .slide-wrap .slide-border {
+  margin: 0 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+page-collection .slide-wrap .slide-border .slide {
+  margin: -10px -10px;
+  background-size: cover;
+  opacity: 0.85;
+  filter: blur(9px);
+  -webkit-filter: blur(9px);
+  height: 120px;
+}
+
+page-collection .slide-item {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background-color: transparent !important;
+  color: white;
+}
+
+page-collection .slide-item .desp {
+  color: white;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.item-inner {
+  border: none !important;
+}
+
 page-home .focus-label {
   color: #005959;
 }

@@ -40,9 +40,9 @@ webpackEmptyAsyncContext.id = 150;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about_about__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__contact_contact__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__collection_collection__ = __webpack_require__(321);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -58,12 +58,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var TabsPage = /** @class */ (function () {
     function TabsPage() {
-        this.tab1Root = __WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */];
-        this.tab2Root = __WEBPACK_IMPORTED_MODULE_1__about_about__["a" /* AboutPage */];
-        this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
+        this.tab1Root = __WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */];
+        this.tab2Root = __WEBPACK_IMPORTED_MODULE_3__collection_collection__["a" /* CollectionPage */];
+        this.tab3Root = __WEBPACK_IMPORTED_MODULE_1__contact_contact__["a" /* ContactPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="My Collection" tabIcon="book"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Search" tabIcon="search"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Scan" tabIcon="barcode"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="More" tabIcon="menu"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/tabs/tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="My Shelves" tabIcon="book"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Search" tabIcon="search"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Scan" tabIcon="barcode"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="More" tabIcon="menu"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/tabs/tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -75,41 +75,6 @@ var TabsPage = /** @class */ (function () {
 /***/ }),
 
 /***/ 195:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var AboutPage = /** @class */ (function () {
-    function AboutPage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    AboutPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/about/about.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
-    ], AboutPage);
-    return AboutPage;
-}());
-
-//# sourceMappingURL=about.js.map
-
-/***/ }),
-
-/***/ 196:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -144,14 +109,14 @@ var ContactPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 197:
+/***/ 196:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shelf_shelf__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shelf_shelf__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -265,19 +230,20 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/home/home.html"*/'<ion-header>\n    <ion-toolbar color="#F4F1EA">\n        <ion-searchbar placeholder="Search by title, author or tag"></ion-searchbar>\n    </ion-toolbar>\n</ion-header>\n\n<ion-content>\n    <ion-card *ngFor="let friend of friends">\n\n        <ion-item>\n            <ion-avatar item-start>\n                <img src="{{friend.ava}}">\n            </ion-avatar>\n            <h2 text-wrap><span class="focus-label">{{friend.name}}</span> gave {{friend.item.star}} stars to <span\n                    class="focus-label">{{friend.item.title}}</span>\n                by <span class="focus-label">{{friend.item.author}}</span></h2>\n            <p class="desp-label">{{friend.item.timeOfRate}}</p>\n        </ion-item>\n\n        <ion-item>\n            <ion-thumbnail item-start>\n                <img src="{{friend.item.image}}">\n            </ion-thumbnail>\n            <h2>{{friend.item.title}}</h2>\n            <p class="desp-label">by {{friend.item.author}} • {{friend.item.publishYear}}</p>\n            <button *ngIf="(friend.item.myConnection | json) == \'{}\'" class="shelf-button">\n                Add to checklist\n                <button class="shelf-arrow" (click)="showShelf({charNum: 0})">\n                    <ion-icon name="arrow-down"></ion-icon>\n                </button>\n            </button>\n            <button *ngIf="(friend.item.myConnection | json) != \'{}\'" class="shelf-button-added">\n                My manga\n                <button class="shelf-arrow" (click)="showShelf({charNum: 0})">\n                    <ion-icon name="arrow-down"></ion-icon>\n                </button>\n            </button>\n            <p class="rating">Rate this manga:\n                <button (click)="openRateMenu()">\n                    <ng-template\n                            *ngIf="1<=friend.item.star;then rated; else notRate">\n                    </ng-template>\n                    <ng-template\n                            *ngIf="2<=friend.item.star;then rated; else notRate">\n                    </ng-template>\n                    <ng-template\n                            *ngIf="3<=friend.item.star;then rated; else notRate">\n                    </ng-template>\n                    <ng-template\n                            *ngIf="4<=friend.item.star;then rated; else notRate">\n                    </ng-template>\n                    <ng-template\n                            *ngIf="5<=friend.item.star;then rated; else notRate">\n                    </ng-template>\n                    <ng-template #rated>\n                        <ion-icon name="star"></ion-icon>\n                    </ng-template>\n\n                    <ng-template #notRate>\n                        <ion-icon name="star-outline"></ion-icon>\n                    </ng-template>\n            </button>\n            </p>\n        </ion-item>\n\n        <ion-row>\n            <ion-col>\n                <button ion-button icon-start clear small class="social">\n                    <ion-icon name="thumbs-up"></ion-icon>\n                    <div>{{friend.item.noLike}} Likes</div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button icon-start clear small class="social">\n                    <ion-icon name="text"></ion-icon>\n                    <div>{{friend.item.noComment}} Comments</div>\n                </button>\n            </ion-col>\n        </ion-row>\n\n    </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/home/home.html"*/'<ion-header>\n    <ion-toolbar>\n        <ion-searchbar placeholder="Search by title, author or tag"></ion-searchbar>\n    </ion-toolbar>\n</ion-header>\n\n<ion-content>\n    <ion-card *ngFor="let friend of friends">\n\n        <ion-item>\n            <ion-avatar item-start>\n                <img src="{{friend.ava}}">\n            </ion-avatar>\n            <h2 text-wrap><span class="focus-label">{{friend.name}}</span> gave {{friend.item.star}} stars to <span\n                    class="focus-label">{{friend.item.title}}</span>\n                by <span class="focus-label">{{friend.item.author}}</span></h2>\n            <p class="desp-label">{{friend.item.timeOfRate}}</p>\n        </ion-item>\n\n        <ion-item>\n            <ion-thumbnail item-start>\n                <img src="{{friend.item.image}}">\n            </ion-thumbnail>\n            <h2>{{friend.item.title}}</h2>\n            <p class="desp-label">by {{friend.item.author}} • {{friend.item.publishYear}}</p>\n            <button *ngIf="(friend.item.myConnection | json) == \'{}\'" class="shelf-button">\n                Add to checklist\n                <button class="shelf-arrow" (click)="showShelf({charNum: 0})">\n                    <ion-icon name="arrow-down"></ion-icon>\n                </button>\n            </button>\n            <button *ngIf="(friend.item.myConnection | json) != \'{}\'" class="shelf-button-added">\n                My manga\n                <button class="shelf-arrow" (click)="showShelf({charNum: 0})">\n                    <ion-icon name="arrow-down"></ion-icon>\n                </button>\n            </button>\n            <p class="rating">Rate this manga:\n                <button (click)="openRateMenu()">\n                    <ng-template\n                            *ngIf="1<=friend.item.star;then rated; else notRate">\n                    </ng-template>\n                    <ng-template\n                            *ngIf="2<=friend.item.star;then rated; else notRate">\n                    </ng-template>\n                    <ng-template\n                            *ngIf="3<=friend.item.star;then rated; else notRate">\n                    </ng-template>\n                    <ng-template\n                            *ngIf="4<=friend.item.star;then rated; else notRate">\n                    </ng-template>\n                    <ng-template\n                            *ngIf="5<=friend.item.star;then rated; else notRate">\n                    </ng-template>\n                    <ng-template #rated>\n                        <ion-icon name="star"></ion-icon>\n                    </ng-template>\n\n                    <ng-template #notRate>\n                        <ion-icon name="star-outline"></ion-icon>\n                    </ng-template>\n            </button>\n            </p>\n        </ion-item>\n\n        <ion-row>\n            <ion-col>\n                <button ion-button icon-start clear small class="social">\n                    <ion-icon name="thumbs-up"></ion-icon>\n                    <div>{{friend.item.noLike}} Likes</div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button icon-start clear small class="social">\n                    <ion-icon name="text"></ion-icon>\n                    <div>{{friend.item.noComment}} Comments</div>\n                </button>\n            </ion-col>\n        </ion-row>\n\n    </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* ActionSheetController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* ActionSheetController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* ActionSheetController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */]])
     ], HomePage);
     return HomePage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=home.js.map
 
 /***/ }),
 
-/***/ 198:
+/***/ 197:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -331,6 +297,64 @@ var ShelfPage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 321:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CollectionPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CollectionPage = /** @class */ (function () {
+    function CollectionPage(navCtrl) {
+        this.navCtrl = navCtrl;
+        this.latest = [
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-totoro.png',
+                author: 'One'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/advance-card-bttf.png',
+                author: 'One'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-totoro.png',
+                author: 'One'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/advance-card-bttf.png',
+                author: 'One'
+            }
+        ];
+    }
+    CollectionPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-collection',template:/*ion-inline-start:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/collection/collection.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="header-title">\n      My Collection\n    </ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="add"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-searchbar placeholder="Search in your shelves" class="search-box"></ion-searchbar>\n  <div class="my-latest">\n    <span>my latest added items:</span>\n    <span class="see-more">see all</span>\n  </div>\n  <ion-slides class="slide-wrap">\n    <ion-slide *ngFor="let item of latest">\n      <!--<div style=\'background-image: url("assets/imgs/thumbnail-totoro.png"); width: 100%; height: 100px\'></div>-->\n      <!--<ion-item [style.backgroundImage]="\'url(\'+item.image+\')\'">-->\n      <div class="slide-border">\n        <div [ngStyle]="{\'background-image\': \'url(\' + item.image + \')\'}" class="slide">\n        </div>\n      </div>\n      <ion-item class="slide-item">\n        <ion-thumbnail item-start>\n          <img src="{{item.image}}">\n        </ion-thumbnail>\n        <h2>{{item.title}}</h2>\n        <p class="desp">by {{item.author}}</p>\n      </ion-item>\n    </ion-slide>\n  </ion-slides>\n</ion-content>\n'/*ion-inline-end:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/collection/collection.html"*/
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object])
+    ], CollectionPage);
+    return CollectionPage;
+    var _a;
+}());
+
+//# sourceMappingURL=collection.js.map
+
+/***/ }),
+
 /***/ 322:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -354,13 +378,13 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(388);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_about_about__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_shelf_shelf__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_contact_contact__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_tabs_tabs__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_status_bar__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_splash_screen__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_shelf_shelf__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_collection_collection__ = __webpack_require__(321);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -385,11 +409,11 @@ var AppModule = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_4__pages_about_about__["a" /* AboutPage */],
-                __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__["a" /* ContactPage */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_shelf_shelf__["a" /* ShelfPage */]
+                __WEBPACK_IMPORTED_MODULE_10__pages_collection_collection__["a" /* CollectionPage */],
+                __WEBPACK_IMPORTED_MODULE_4__pages_contact_contact__["a" /* ContactPage */],
+                __WEBPACK_IMPORTED_MODULE_5__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_tabs_tabs__["a" /* TabsPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_shelf_shelf__["a" /* ShelfPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
@@ -400,15 +424,15 @@ var AppModule = /** @class */ (function () {
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_4__pages_about_about__["a" /* AboutPage */],
-                __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__["a" /* ContactPage */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_shelf_shelf__["a" /* ShelfPage */]
+                __WEBPACK_IMPORTED_MODULE_10__pages_collection_collection__["a" /* CollectionPage */],
+                __WEBPACK_IMPORTED_MODULE_4__pages_contact_contact__["a" /* ContactPage */],
+                __WEBPACK_IMPORTED_MODULE_5__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_tabs_tabs__["a" /* TabsPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_shelf_shelf__["a" /* ShelfPage */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__["a" /* StatusBar */],
-                __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_7__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_8__ionic_native_splash_screen__["a" /* SplashScreen */],
                 { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
             ]
         })
@@ -470,252 +494,252 @@ var MyApp = /** @class */ (function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 199,
-	"./af.js": 199,
-	"./ar": 200,
-	"./ar-dz": 201,
-	"./ar-dz.js": 201,
-	"./ar-kw": 202,
-	"./ar-kw.js": 202,
-	"./ar-ly": 203,
-	"./ar-ly.js": 203,
-	"./ar-ma": 204,
-	"./ar-ma.js": 204,
-	"./ar-sa": 205,
-	"./ar-sa.js": 205,
-	"./ar-tn": 206,
-	"./ar-tn.js": 206,
-	"./ar.js": 200,
-	"./az": 207,
-	"./az.js": 207,
-	"./be": 208,
-	"./be.js": 208,
-	"./bg": 209,
-	"./bg.js": 209,
-	"./bm": 210,
-	"./bm.js": 210,
-	"./bn": 211,
-	"./bn.js": 211,
-	"./bo": 212,
-	"./bo.js": 212,
-	"./br": 213,
-	"./br.js": 213,
-	"./bs": 214,
-	"./bs.js": 214,
-	"./ca": 215,
-	"./ca.js": 215,
-	"./cs": 216,
-	"./cs.js": 216,
-	"./cv": 217,
-	"./cv.js": 217,
-	"./cy": 218,
-	"./cy.js": 218,
-	"./da": 219,
-	"./da.js": 219,
-	"./de": 220,
-	"./de-at": 221,
-	"./de-at.js": 221,
-	"./de-ch": 222,
-	"./de-ch.js": 222,
-	"./de.js": 220,
-	"./dv": 223,
-	"./dv.js": 223,
-	"./el": 224,
-	"./el.js": 224,
-	"./en-au": 225,
-	"./en-au.js": 225,
-	"./en-ca": 226,
-	"./en-ca.js": 226,
-	"./en-gb": 227,
-	"./en-gb.js": 227,
-	"./en-ie": 228,
-	"./en-ie.js": 228,
-	"./en-il": 229,
-	"./en-il.js": 229,
-	"./en-nz": 230,
-	"./en-nz.js": 230,
-	"./eo": 231,
-	"./eo.js": 231,
-	"./es": 232,
-	"./es-do": 233,
-	"./es-do.js": 233,
-	"./es-us": 234,
-	"./es-us.js": 234,
-	"./es.js": 232,
-	"./et": 235,
-	"./et.js": 235,
-	"./eu": 236,
-	"./eu.js": 236,
-	"./fa": 237,
-	"./fa.js": 237,
-	"./fi": 238,
-	"./fi.js": 238,
-	"./fo": 239,
-	"./fo.js": 239,
-	"./fr": 240,
-	"./fr-ca": 241,
-	"./fr-ca.js": 241,
-	"./fr-ch": 242,
-	"./fr-ch.js": 242,
-	"./fr.js": 240,
-	"./fy": 243,
-	"./fy.js": 243,
-	"./gd": 244,
-	"./gd.js": 244,
-	"./gl": 245,
-	"./gl.js": 245,
-	"./gom-latn": 246,
-	"./gom-latn.js": 246,
-	"./gu": 247,
-	"./gu.js": 247,
-	"./he": 248,
-	"./he.js": 248,
-	"./hi": 249,
-	"./hi.js": 249,
-	"./hr": 250,
-	"./hr.js": 250,
-	"./hu": 251,
-	"./hu.js": 251,
-	"./hy-am": 252,
-	"./hy-am.js": 252,
-	"./id": 253,
-	"./id.js": 253,
-	"./is": 254,
-	"./is.js": 254,
-	"./it": 255,
-	"./it.js": 255,
-	"./ja": 256,
-	"./ja.js": 256,
-	"./jv": 257,
-	"./jv.js": 257,
-	"./ka": 258,
-	"./ka.js": 258,
-	"./kk": 259,
-	"./kk.js": 259,
-	"./km": 260,
-	"./km.js": 260,
-	"./kn": 261,
-	"./kn.js": 261,
-	"./ko": 262,
-	"./ko.js": 262,
-	"./ky": 263,
-	"./ky.js": 263,
-	"./lb": 264,
-	"./lb.js": 264,
-	"./lo": 265,
-	"./lo.js": 265,
-	"./lt": 266,
-	"./lt.js": 266,
-	"./lv": 267,
-	"./lv.js": 267,
-	"./me": 268,
-	"./me.js": 268,
-	"./mi": 269,
-	"./mi.js": 269,
-	"./mk": 270,
-	"./mk.js": 270,
-	"./ml": 271,
-	"./ml.js": 271,
-	"./mn": 272,
-	"./mn.js": 272,
-	"./mr": 273,
-	"./mr.js": 273,
-	"./ms": 274,
-	"./ms-my": 275,
-	"./ms-my.js": 275,
-	"./ms.js": 274,
-	"./mt": 276,
-	"./mt.js": 276,
-	"./my": 277,
-	"./my.js": 277,
-	"./nb": 278,
-	"./nb.js": 278,
-	"./ne": 279,
-	"./ne.js": 279,
-	"./nl": 280,
-	"./nl-be": 281,
-	"./nl-be.js": 281,
-	"./nl.js": 280,
-	"./nn": 282,
-	"./nn.js": 282,
-	"./pa-in": 283,
-	"./pa-in.js": 283,
-	"./pl": 284,
-	"./pl.js": 284,
-	"./pt": 285,
-	"./pt-br": 286,
-	"./pt-br.js": 286,
-	"./pt.js": 285,
-	"./ro": 287,
-	"./ro.js": 287,
-	"./ru": 288,
-	"./ru.js": 288,
-	"./sd": 289,
-	"./sd.js": 289,
-	"./se": 290,
-	"./se.js": 290,
-	"./si": 291,
-	"./si.js": 291,
-	"./sk": 292,
-	"./sk.js": 292,
-	"./sl": 293,
-	"./sl.js": 293,
-	"./sq": 294,
-	"./sq.js": 294,
-	"./sr": 295,
-	"./sr-cyrl": 296,
-	"./sr-cyrl.js": 296,
-	"./sr.js": 295,
-	"./ss": 297,
-	"./ss.js": 297,
-	"./sv": 298,
-	"./sv.js": 298,
-	"./sw": 299,
-	"./sw.js": 299,
-	"./ta": 300,
-	"./ta.js": 300,
-	"./te": 301,
-	"./te.js": 301,
-	"./tet": 302,
-	"./tet.js": 302,
-	"./tg": 303,
-	"./tg.js": 303,
-	"./th": 304,
-	"./th.js": 304,
-	"./tl-ph": 305,
-	"./tl-ph.js": 305,
-	"./tlh": 306,
-	"./tlh.js": 306,
-	"./tr": 307,
-	"./tr.js": 307,
-	"./tzl": 308,
-	"./tzl.js": 308,
-	"./tzm": 309,
-	"./tzm-latn": 310,
-	"./tzm-latn.js": 310,
-	"./tzm.js": 309,
-	"./ug-cn": 311,
-	"./ug-cn.js": 311,
-	"./uk": 312,
-	"./uk.js": 312,
-	"./ur": 313,
-	"./ur.js": 313,
-	"./uz": 314,
-	"./uz-latn": 315,
-	"./uz-latn.js": 315,
-	"./uz.js": 314,
-	"./vi": 316,
-	"./vi.js": 316,
-	"./x-pseudo": 317,
-	"./x-pseudo.js": 317,
-	"./yo": 318,
-	"./yo.js": 318,
-	"./zh-cn": 319,
-	"./zh-cn.js": 319,
-	"./zh-hk": 320,
-	"./zh-hk.js": 320,
-	"./zh-tw": 321,
-	"./zh-tw.js": 321
+	"./af": 198,
+	"./af.js": 198,
+	"./ar": 199,
+	"./ar-dz": 200,
+	"./ar-dz.js": 200,
+	"./ar-kw": 201,
+	"./ar-kw.js": 201,
+	"./ar-ly": 202,
+	"./ar-ly.js": 202,
+	"./ar-ma": 203,
+	"./ar-ma.js": 203,
+	"./ar-sa": 204,
+	"./ar-sa.js": 204,
+	"./ar-tn": 205,
+	"./ar-tn.js": 205,
+	"./ar.js": 199,
+	"./az": 206,
+	"./az.js": 206,
+	"./be": 207,
+	"./be.js": 207,
+	"./bg": 208,
+	"./bg.js": 208,
+	"./bm": 209,
+	"./bm.js": 209,
+	"./bn": 210,
+	"./bn.js": 210,
+	"./bo": 211,
+	"./bo.js": 211,
+	"./br": 212,
+	"./br.js": 212,
+	"./bs": 213,
+	"./bs.js": 213,
+	"./ca": 214,
+	"./ca.js": 214,
+	"./cs": 215,
+	"./cs.js": 215,
+	"./cv": 216,
+	"./cv.js": 216,
+	"./cy": 217,
+	"./cy.js": 217,
+	"./da": 218,
+	"./da.js": 218,
+	"./de": 219,
+	"./de-at": 220,
+	"./de-at.js": 220,
+	"./de-ch": 221,
+	"./de-ch.js": 221,
+	"./de.js": 219,
+	"./dv": 222,
+	"./dv.js": 222,
+	"./el": 223,
+	"./el.js": 223,
+	"./en-au": 224,
+	"./en-au.js": 224,
+	"./en-ca": 225,
+	"./en-ca.js": 225,
+	"./en-gb": 226,
+	"./en-gb.js": 226,
+	"./en-ie": 227,
+	"./en-ie.js": 227,
+	"./en-il": 228,
+	"./en-il.js": 228,
+	"./en-nz": 229,
+	"./en-nz.js": 229,
+	"./eo": 230,
+	"./eo.js": 230,
+	"./es": 231,
+	"./es-do": 232,
+	"./es-do.js": 232,
+	"./es-us": 233,
+	"./es-us.js": 233,
+	"./es.js": 231,
+	"./et": 234,
+	"./et.js": 234,
+	"./eu": 235,
+	"./eu.js": 235,
+	"./fa": 236,
+	"./fa.js": 236,
+	"./fi": 237,
+	"./fi.js": 237,
+	"./fo": 238,
+	"./fo.js": 238,
+	"./fr": 239,
+	"./fr-ca": 240,
+	"./fr-ca.js": 240,
+	"./fr-ch": 241,
+	"./fr-ch.js": 241,
+	"./fr.js": 239,
+	"./fy": 242,
+	"./fy.js": 242,
+	"./gd": 243,
+	"./gd.js": 243,
+	"./gl": 244,
+	"./gl.js": 244,
+	"./gom-latn": 245,
+	"./gom-latn.js": 245,
+	"./gu": 246,
+	"./gu.js": 246,
+	"./he": 247,
+	"./he.js": 247,
+	"./hi": 248,
+	"./hi.js": 248,
+	"./hr": 249,
+	"./hr.js": 249,
+	"./hu": 250,
+	"./hu.js": 250,
+	"./hy-am": 251,
+	"./hy-am.js": 251,
+	"./id": 252,
+	"./id.js": 252,
+	"./is": 253,
+	"./is.js": 253,
+	"./it": 254,
+	"./it.js": 254,
+	"./ja": 255,
+	"./ja.js": 255,
+	"./jv": 256,
+	"./jv.js": 256,
+	"./ka": 257,
+	"./ka.js": 257,
+	"./kk": 258,
+	"./kk.js": 258,
+	"./km": 259,
+	"./km.js": 259,
+	"./kn": 260,
+	"./kn.js": 260,
+	"./ko": 261,
+	"./ko.js": 261,
+	"./ky": 262,
+	"./ky.js": 262,
+	"./lb": 263,
+	"./lb.js": 263,
+	"./lo": 264,
+	"./lo.js": 264,
+	"./lt": 265,
+	"./lt.js": 265,
+	"./lv": 266,
+	"./lv.js": 266,
+	"./me": 267,
+	"./me.js": 267,
+	"./mi": 268,
+	"./mi.js": 268,
+	"./mk": 269,
+	"./mk.js": 269,
+	"./ml": 270,
+	"./ml.js": 270,
+	"./mn": 271,
+	"./mn.js": 271,
+	"./mr": 272,
+	"./mr.js": 272,
+	"./ms": 273,
+	"./ms-my": 274,
+	"./ms-my.js": 274,
+	"./ms.js": 273,
+	"./mt": 275,
+	"./mt.js": 275,
+	"./my": 276,
+	"./my.js": 276,
+	"./nb": 277,
+	"./nb.js": 277,
+	"./ne": 278,
+	"./ne.js": 278,
+	"./nl": 279,
+	"./nl-be": 280,
+	"./nl-be.js": 280,
+	"./nl.js": 279,
+	"./nn": 281,
+	"./nn.js": 281,
+	"./pa-in": 282,
+	"./pa-in.js": 282,
+	"./pl": 283,
+	"./pl.js": 283,
+	"./pt": 284,
+	"./pt-br": 285,
+	"./pt-br.js": 285,
+	"./pt.js": 284,
+	"./ro": 286,
+	"./ro.js": 286,
+	"./ru": 287,
+	"./ru.js": 287,
+	"./sd": 288,
+	"./sd.js": 288,
+	"./se": 289,
+	"./se.js": 289,
+	"./si": 290,
+	"./si.js": 290,
+	"./sk": 291,
+	"./sk.js": 291,
+	"./sl": 292,
+	"./sl.js": 292,
+	"./sq": 293,
+	"./sq.js": 293,
+	"./sr": 294,
+	"./sr-cyrl": 295,
+	"./sr-cyrl.js": 295,
+	"./sr.js": 294,
+	"./ss": 296,
+	"./ss.js": 296,
+	"./sv": 297,
+	"./sv.js": 297,
+	"./sw": 298,
+	"./sw.js": 298,
+	"./ta": 299,
+	"./ta.js": 299,
+	"./te": 300,
+	"./te.js": 300,
+	"./tet": 301,
+	"./tet.js": 301,
+	"./tg": 302,
+	"./tg.js": 302,
+	"./th": 303,
+	"./th.js": 303,
+	"./tl-ph": 304,
+	"./tl-ph.js": 304,
+	"./tlh": 305,
+	"./tlh.js": 305,
+	"./tr": 306,
+	"./tr.js": 306,
+	"./tzl": 307,
+	"./tzl.js": 307,
+	"./tzm": 308,
+	"./tzm-latn": 309,
+	"./tzm-latn.js": 309,
+	"./tzm.js": 308,
+	"./ug-cn": 310,
+	"./ug-cn.js": 310,
+	"./uk": 311,
+	"./uk.js": 311,
+	"./ur": 312,
+	"./ur.js": 312,
+	"./uz": 313,
+	"./uz-latn": 314,
+	"./uz-latn.js": 314,
+	"./uz.js": 313,
+	"./vi": 315,
+	"./vi.js": 315,
+	"./x-pseudo": 316,
+	"./x-pseudo.js": 316,
+	"./yo": 317,
+	"./yo.js": 317,
+	"./zh-cn": 318,
+	"./zh-cn.js": 318,
+	"./zh-hk": 319,
+	"./zh-hk.js": 319,
+	"./zh-tw": 320,
+	"./zh-tw.js": 320
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
