@@ -9,6 +9,7 @@ export class CollectionPage {
 
     latest
     shelves
+    genres
 
     constructor (public navCtrl: NavController) {
         this.latest = [
@@ -40,7 +41,7 @@ export class CollectionPage {
                 items: [
                     {
                         title: 'One Punch Man',
-                        image: 'assets/imgs/thumbnail-totoro.png',
+                        image: 'assets/imgs/advance-card-bttf.png',
                         author: 'One'
                     },
                     {
@@ -61,7 +62,7 @@ export class CollectionPage {
                 items: [
                     {
                         title: 'One Punch Man',
-                        image: 'assets/imgs/thumbnail-totoro.png',
+                        image: 'assets/imgs/advance-card-bttf.png',
                         author: 'One'
                     },
                     {
@@ -91,6 +92,23 @@ export class CollectionPage {
                         author: 'One'
                     }
                 ]
+            }
+        ]
+        this.genres = [
+            {
+                name: 'shounen'
+            },
+            {
+                name: 'comedy'
+            },
+            {
+                name: 'sport'
+            },
+            {
+                name: 'fantasy'
+            },
+            {
+                name: 'action'
             }
         ]
     }

@@ -1,54 +1,77 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title class="header-title">
-      My Collection
-    </ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only>
-        <ion-icon name="add"></ion-icon>
-      </button>
-    </ion-buttons>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title class="header-title">
+            My Collection
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only>
+                <ion-icon name="add"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-searchbar placeholder="Search in your shelves" class="search-box"></ion-searchbar>
-  <div class="my-latest">
-    <span>my latest added items:</span>
-    <span class="see-more">see all</span>
-  </div>
-  <ion-slides class="slide-wrap">
-    <ion-slide *ngFor="let item of latest">
-      <!--<div style='background-image: url("assets/imgs/thumbnail-totoro.png"); width: 100%; height: 100px'></div>-->
-      <!--<ion-item [style.backgroundImage]="'url('+item.image+')'">-->
-      <div class="slide-border">
-        <div [ngStyle]="{'background-image': 'url(' + item.image + ')'}" class="slide">
+    <ion-searchbar placeholder="Search in your shelves" class="search-box"></ion-searchbar>
+    <div class="title-flex">
+        <span>my latest added items:</span>
+        <span class="right">see all</span>
+    </div>
+    <ion-slides class="slide-wrap">
+        <ion-slide *ngFor="let item of latest">
+            <!--<div style='background-image: url("assets/imgs/thumbnail-totoro.png"); width: 100%; height: 100px'></div>-->
+            <!--<ion-item [style.backgroundImage]="'url('+item.image+')'">-->
+            <div class="slide-border">
+                <div [ngStyle]="{'background-image': 'url(' + item.image + ')'}" class="slide">
+                </div>
+            </div>
+            <ion-item class="slide-item">
+                <ion-thumbnail item-start>
+                    <img src="{{item.image}}">
+                </ion-thumbnail>
+                <h2>{{item.title}}</h2>
+                <p class="desp">by {{item.author}}</p>
+            </ion-item>
+        </ion-slide>
+    </ion-slides>
+    <div *ngFor="let shelf of shelves" class="shelf-item">
+        <div class="shelf-thumbnail">
+            <ion-thumbnail>
+                <img src="{{shelf.items[0].image}}">
+            </ion-thumbnail>
+            <ion-thumbnail *ngIf="shelf.items.length > 1" class="back1">
+                <img src="{{shelf.items[1].image}}">
+            </ion-thumbnail>
+            <ion-thumbnail *ngIf="shelf.items.length > 2" class="back2">
+                <img src="{{shelf.items[2].image}}">
+            </ion-thumbnail>
         </div>
-      </div>
-      <ion-item class="slide-item">
-        <ion-thumbnail item-start>
-          <img src="{{item.image}}">
-        </ion-thumbnail>
-        <h2>{{item.title}}</h2>
-        <p class="desp">by {{item.author}}</p>
-      </ion-item>
-    </ion-slide>
-  </ion-slides>
-  <div *ngFor="let shelf of shelves" class="shelf-item">
-    <div class="shelf-thumbnail">
-      <ion-thumbnail>
-        <img src="{{shelf.items[0].image}}">
-      </ion-thumbnail>
-      <ion-thumbnail *ngIf="shelf.items.length > 1" class="back1">
-        <img src="{{shelf.items[1].image}}">
-      </ion-thumbnail>
-      <ion-thumbnail *ngIf="shelf.items.length > 2" class="back2">
-        <img src="{{shelf.items[2].image}}">
-      </ion-thumbnail>
+        <div class="shelf-desp">
+            <p class="shelf-title">{{shelf.name}}</p>
+            <p class="shelf-desp">{{shelf.no_books}} items</p>
+        </div>
     </div>
-    <div class="shelf-desp">
-      <p class="shelf-title">{{shelf.name}}</p>
-      <p class="shelf-desp">{{shelf.no_books}} items</p>
+    <button class="create-button">
+        <ion-icon name="add"></ion-icon>
+        <span>Create a new shelf</span>
+    </button>
+    <div class="genre-suggestion">
+        <div class="title-flex">
+            <span>add items from favourite genres:</span>
+            <span class="right">edit</span>
+        </div>
+        <ion-slides class="genre-list-wrap" slidesPerView="3" spaceBetween="10">
+
+            <ion-slide *ngFor="let genre of genres">
+                <h2>{{genre.name}}</h2>
+            </ion-slide>
+            <ion-slide class="add-more">
+                <span>
+                    <ion-icon name="add"></ion-icon>
+                    <div>Add more favourite genres</div>
+                </span>
+            </ion-slide>
+
+        </ion-slides>
     </div>
-  </div>
 </ion-content>

@@ -25738,12 +25738,12 @@ page-collection .search-box {
   margin: 10px 0px;
 }
 
-page-collection .my-latest {
+page-collection .title-flex {
   text-transform: uppercase;
   padding: 0 8px;
 }
 
-page-collection .my-latest .see-more {
+page-collection .title-flex .right {
   position: absolute;
   font-weight: 500;
   color: #005959;
@@ -25835,6 +25835,53 @@ page-collection .shelf-item .shelf-desp .shelf-desp {
   color: #8c8c8c;
 }
 
+page-collection .create-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #3c843c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+
+page-collection .create-button span {
+  margin-left: 8px;
+}
+
+page-collection .genre-suggestion {
+  padding-top: 20px;
+}
+
+page-collection .genre-suggestion .genre-list-wrap {
+  margin-top: 15px;
+  padding: 0 8px;
+  margin-bottom: 10px;
+}
+
+page-collection .genre-suggestion .genre-list-wrap ion-slide {
+  border-radius: 4px;
+  background-color: #e8e8e8;
+  height: 80px;
+  margin-right: -5px;
+}
+
+page-collection .genre-suggestion .genre-list-wrap ion-slide h2 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 18px;
+}
+
+page-collection .genre-suggestion .genre-list-wrap .add-more {
+  border: 1px dashed #e8e8e8;
+  background-color: transparent;
+  font-size: 14px;
+}
+
 .item-inner {
   border: none !important;
 }
@@ -25876,7 +25923,7 @@ page-home .social {
 }
 
 .ios .shelf-button {
-  background-color: #4ca64c;
+  background-color: #3c843c;
   color: white;
   margin-top: 10px;
   padding-right: 5px !important;
@@ -25916,7 +25963,7 @@ page-home .social {
 }
 
 .md .shelf-button {
-  background-color: #4ca64c;
+  background-color: #3c843c;
   color: white;
   margin-top: 10px;
   border-radius: 4px;
