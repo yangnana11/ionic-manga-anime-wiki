@@ -1,0 +1,16 @@
+page-search {
+  .menu-wrap {
+    margin: $margin-left-right $margin-top-bottom;
+    display: flex;
+    .menu-item {
+      width: calc(100% / 4);
+      text-align: center;
+      ion-icon {
+        font-size: 30px;
+      }
+    }
+    .active {
+      color: $label-green-color;
+    }
+  }
+}

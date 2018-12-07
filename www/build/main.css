@@ -26000,6 +26000,27 @@ page-home .social {
   padding-left: 10px;
 }
 
+page-search .menu-wrap {
+  margin: 8px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+page-search .menu-wrap .menu-item {
+  width: calc(100% / 4);
+  text-align: center;
+}
+
+page-search .menu-wrap .menu-item ion-icon {
+  font-size: 30px;
+}
+
+page-search .menu-wrap .active {
+  color: #005959;
+}
+
 page-shelf .desp-label {
   color: #8c8c8c;
   margin-top: 10px;

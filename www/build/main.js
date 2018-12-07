@@ -40,9 +40,9 @@ webpackEmptyAsyncContext.id = 150;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__contact_contact__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__collection_collection__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__collection_collection__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__search_search__ = __webpack_require__(321);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -58,9 +58,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var TabsPage = /** @class */ (function () {
     function TabsPage() {
-        this.tab1Root = __WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */];
-        this.tab2Root = __WEBPACK_IMPORTED_MODULE_3__collection_collection__["a" /* CollectionPage */];
-        this.tab3Root = __WEBPACK_IMPORTED_MODULE_1__contact_contact__["a" /* ContactPage */];
+        this.tab1Root = __WEBPACK_IMPORTED_MODULE_1__home_home__["a" /* HomePage */];
+        this.tab2Root = __WEBPACK_IMPORTED_MODULE_2__collection_collection__["a" /* CollectionPage */];
+        this.tab3Root = __WEBPACK_IMPORTED_MODULE_3__search_search__["a" /* SearchPage */];
     }
     TabsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="My Shelves" tabIcon="book"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Search" tabIcon="search"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Scan" tabIcon="barcode"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="More" tabIcon="menu"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/tabs/tabs.html"*/
@@ -78,45 +78,10 @@ var TabsPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var ContactPage = /** @class */ (function () {
-    function ContactPage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    ContactPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-start></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/contact/contact.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
-    ], ContactPage);
-    return ContactPage;
-}());
-
-//# sourceMappingURL=contact.js.map
-
-/***/ }),
-
-/***/ 196:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shelf_shelf__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shelf_shelf__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -243,7 +208,7 @@ var HomePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 197:
+/***/ 196:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -297,7 +262,7 @@ var ShelfPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 321:
+/***/ 320:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -422,13 +387,53 @@ var CollectionPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-collection',template:/*ion-inline-start:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/collection/collection.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title class="header-title">\n            My Collection\n        </ion-title>\n        <ion-buttons end>\n            <button ion-button icon-only>\n                <ion-icon name="add"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <ion-searchbar placeholder="Search in your shelves" class="search-box"></ion-searchbar>\n    <div class="title-flex">\n        <span>my latest added items:</span>\n        <span class="right">see all</span>\n    </div>\n    <ion-slides class="slide-wrap">\n        <ion-slide *ngFor="let item of latest">\n            <!--<div style=\'background-image: url("assets/imgs/thumbnail-totoro.png"); width: 100%; height: 100px\'></div>-->\n            <!--<ion-item [style.backgroundImage]="\'url(\'+item.image+\')\'">-->\n            <div class="slide-border">\n                <div [ngStyle]="{\'background-image\': \'url(\' + item.image + \')\'}" class="slide">\n                </div>\n            </div>\n            <ion-item class="slide-item">\n                <ion-thumbnail item-start>\n                    <img src="{{item.image}}">\n                </ion-thumbnail>\n                <h2>{{item.title}}</h2>\n                <p class="desp">by {{item.author}}</p>\n            </ion-item>\n        </ion-slide>\n    </ion-slides>\n    <div *ngFor="let shelf of shelves" class="shelf-item">\n        <div class="shelf-thumbnail">\n            <ion-thumbnail>\n                <img src="{{shelf.items[0].image}}">\n            </ion-thumbnail>\n            <ion-thumbnail *ngIf="shelf.items.length > 1" class="back1">\n                <img src="{{shelf.items[1].image}}">\n            </ion-thumbnail>\n            <ion-thumbnail *ngIf="shelf.items.length > 2" class="back2">\n                <img src="{{shelf.items[2].image}}">\n            </ion-thumbnail>\n        </div>\n        <div class="shelf-desp">\n            <p class="shelf-title">{{shelf.name}}</p>\n            <p class="shelf-desp">{{shelf.no_books}} items</p>\n        </div>\n    </div>\n    <button class="create-button">\n        <ion-icon name="add"></ion-icon>\n        <span>Create a new shelf</span>\n    </button>\n    <div class="genre-suggestion">\n        <div class="title-flex">\n            <span>add items from favourite genres:</span>\n            <span class="right">edit</span>\n        </div>\n        <ion-slides class="genre-list-wrap" slidesPerView="3" spaceBetween="10">\n\n            <ion-slide *ngFor="let genre of genres">\n                <h2>{{genre.name}}</h2>\n            </ion-slide>\n            <ion-slide class="add-more">\n                <span>\n                    <ion-icon name="add"></ion-icon>\n                    <div>Add more favourite genres</div>\n                </span>\n            </ion-slide>\n\n        </ion-slides>\n    </div>\n</ion-content>\n'/*ion-inline-end:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/collection/collection.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], CollectionPage);
     return CollectionPage;
-    var _a;
 }());
 
 //# sourceMappingURL=collection.js.map
+
+/***/ }),
+
+/***/ 321:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SearchPage = /** @class */ (function () {
+    function SearchPage(navCtrl) {
+        this.navCtrl = navCtrl;
+        this.congrat = {
+            title: 'One Punch Man',
+            image: 'assets/imgs/thumbnail-totoro.png',
+            author: 'One'
+        };
+    }
+    SearchPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-search',template:/*ion-inline-start:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/search/search.html"*/'<ion-header>\n  <ion-toolbar>\n    <ion-searchbar placeholder="Search by title, author or tag"></ion-searchbar>\n  </ion-toolbar>\n  <div class="menu-wrap">\n    <div class="menu-item active">\n      <ion-icon name="apps"></ion-icon>\n      <div>All</div>\n    </div>\n    <div class="menu-item">\n      <ion-icon name="image"></ion-icon>\n      <div>Manga</div>\n    </div>\n    <div class="menu-item">\n      <ion-icon name="videocam"></ion-icon>\n      <div>Anime</div>\n    </div>\n    <div class="menu-item">\n      <ion-icon name="book"></ion-icon>\n      <div>Novel</div>\n    </div>\n  </div>\n</ion-header>\n\n<ion-content>\n  <div>\n    <img src="{{congrat.image}}" alt="">\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/search/search.html"*/
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object])
+    ], SearchPage);
+    return SearchPage;
+    var _a;
+}());
+
+//# sourceMappingURL=search.js.map
 
 /***/ }),
 
@@ -455,13 +460,13 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(388);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_contact_contact__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_tabs_tabs__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_status_bar__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_splash_screen__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_shelf_shelf__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_collection_collection__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_shelf_shelf__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_collection_collection__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_search_search__ = __webpack_require__(321);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -486,11 +491,11 @@ var AppModule = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_collection_collection__["a" /* CollectionPage */],
-                __WEBPACK_IMPORTED_MODULE_4__pages_contact_contact__["a" /* ContactPage */],
-                __WEBPACK_IMPORTED_MODULE_5__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_tabs_tabs__["a" /* TabsPage */],
-                __WEBPACK_IMPORTED_MODULE_9__pages_shelf_shelf__["a" /* ShelfPage */]
+                __WEBPACK_IMPORTED_MODULE_9__pages_collection_collection__["a" /* CollectionPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_search_search__["a" /* SearchPage */],
+                __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__["a" /* TabsPage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_shelf_shelf__["a" /* ShelfPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
@@ -501,15 +506,15 @@ var AppModule = /** @class */ (function () {
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_collection_collection__["a" /* CollectionPage */],
-                __WEBPACK_IMPORTED_MODULE_4__pages_contact_contact__["a" /* ContactPage */],
-                __WEBPACK_IMPORTED_MODULE_5__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_tabs_tabs__["a" /* TabsPage */],
-                __WEBPACK_IMPORTED_MODULE_9__pages_shelf_shelf__["a" /* ShelfPage */]
+                __WEBPACK_IMPORTED_MODULE_9__pages_collection_collection__["a" /* CollectionPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_search_search__["a" /* SearchPage */],
+                __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__["a" /* TabsPage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_shelf_shelf__["a" /* ShelfPage */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_7__ionic_native_status_bar__["a" /* StatusBar */],
-                __WEBPACK_IMPORTED_MODULE_8__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__["a" /* SplashScreen */],
                 { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
             ]
         })
@@ -571,252 +576,252 @@ var MyApp = /** @class */ (function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 198,
-	"./af.js": 198,
-	"./ar": 199,
-	"./ar-dz": 200,
-	"./ar-dz.js": 200,
-	"./ar-kw": 201,
-	"./ar-kw.js": 201,
-	"./ar-ly": 202,
-	"./ar-ly.js": 202,
-	"./ar-ma": 203,
-	"./ar-ma.js": 203,
-	"./ar-sa": 204,
-	"./ar-sa.js": 204,
-	"./ar-tn": 205,
-	"./ar-tn.js": 205,
-	"./ar.js": 199,
-	"./az": 206,
-	"./az.js": 206,
-	"./be": 207,
-	"./be.js": 207,
-	"./bg": 208,
-	"./bg.js": 208,
-	"./bm": 209,
-	"./bm.js": 209,
-	"./bn": 210,
-	"./bn.js": 210,
-	"./bo": 211,
-	"./bo.js": 211,
-	"./br": 212,
-	"./br.js": 212,
-	"./bs": 213,
-	"./bs.js": 213,
-	"./ca": 214,
-	"./ca.js": 214,
-	"./cs": 215,
-	"./cs.js": 215,
-	"./cv": 216,
-	"./cv.js": 216,
-	"./cy": 217,
-	"./cy.js": 217,
-	"./da": 218,
-	"./da.js": 218,
-	"./de": 219,
-	"./de-at": 220,
-	"./de-at.js": 220,
-	"./de-ch": 221,
-	"./de-ch.js": 221,
-	"./de.js": 219,
-	"./dv": 222,
-	"./dv.js": 222,
-	"./el": 223,
-	"./el.js": 223,
-	"./en-au": 224,
-	"./en-au.js": 224,
-	"./en-ca": 225,
-	"./en-ca.js": 225,
-	"./en-gb": 226,
-	"./en-gb.js": 226,
-	"./en-ie": 227,
-	"./en-ie.js": 227,
-	"./en-il": 228,
-	"./en-il.js": 228,
-	"./en-nz": 229,
-	"./en-nz.js": 229,
-	"./eo": 230,
-	"./eo.js": 230,
-	"./es": 231,
-	"./es-do": 232,
-	"./es-do.js": 232,
-	"./es-us": 233,
-	"./es-us.js": 233,
-	"./es.js": 231,
-	"./et": 234,
-	"./et.js": 234,
-	"./eu": 235,
-	"./eu.js": 235,
-	"./fa": 236,
-	"./fa.js": 236,
-	"./fi": 237,
-	"./fi.js": 237,
-	"./fo": 238,
-	"./fo.js": 238,
-	"./fr": 239,
-	"./fr-ca": 240,
-	"./fr-ca.js": 240,
-	"./fr-ch": 241,
-	"./fr-ch.js": 241,
-	"./fr.js": 239,
-	"./fy": 242,
-	"./fy.js": 242,
-	"./gd": 243,
-	"./gd.js": 243,
-	"./gl": 244,
-	"./gl.js": 244,
-	"./gom-latn": 245,
-	"./gom-latn.js": 245,
-	"./gu": 246,
-	"./gu.js": 246,
-	"./he": 247,
-	"./he.js": 247,
-	"./hi": 248,
-	"./hi.js": 248,
-	"./hr": 249,
-	"./hr.js": 249,
-	"./hu": 250,
-	"./hu.js": 250,
-	"./hy-am": 251,
-	"./hy-am.js": 251,
-	"./id": 252,
-	"./id.js": 252,
-	"./is": 253,
-	"./is.js": 253,
-	"./it": 254,
-	"./it.js": 254,
-	"./ja": 255,
-	"./ja.js": 255,
-	"./jv": 256,
-	"./jv.js": 256,
-	"./ka": 257,
-	"./ka.js": 257,
-	"./kk": 258,
-	"./kk.js": 258,
-	"./km": 259,
-	"./km.js": 259,
-	"./kn": 260,
-	"./kn.js": 260,
-	"./ko": 261,
-	"./ko.js": 261,
-	"./ky": 262,
-	"./ky.js": 262,
-	"./lb": 263,
-	"./lb.js": 263,
-	"./lo": 264,
-	"./lo.js": 264,
-	"./lt": 265,
-	"./lt.js": 265,
-	"./lv": 266,
-	"./lv.js": 266,
-	"./me": 267,
-	"./me.js": 267,
-	"./mi": 268,
-	"./mi.js": 268,
-	"./mk": 269,
-	"./mk.js": 269,
-	"./ml": 270,
-	"./ml.js": 270,
-	"./mn": 271,
-	"./mn.js": 271,
-	"./mr": 272,
-	"./mr.js": 272,
-	"./ms": 273,
-	"./ms-my": 274,
-	"./ms-my.js": 274,
-	"./ms.js": 273,
-	"./mt": 275,
-	"./mt.js": 275,
-	"./my": 276,
-	"./my.js": 276,
-	"./nb": 277,
-	"./nb.js": 277,
-	"./ne": 278,
-	"./ne.js": 278,
-	"./nl": 279,
-	"./nl-be": 280,
-	"./nl-be.js": 280,
-	"./nl.js": 279,
-	"./nn": 281,
-	"./nn.js": 281,
-	"./pa-in": 282,
-	"./pa-in.js": 282,
-	"./pl": 283,
-	"./pl.js": 283,
-	"./pt": 284,
-	"./pt-br": 285,
-	"./pt-br.js": 285,
-	"./pt.js": 284,
-	"./ro": 286,
-	"./ro.js": 286,
-	"./ru": 287,
-	"./ru.js": 287,
-	"./sd": 288,
-	"./sd.js": 288,
-	"./se": 289,
-	"./se.js": 289,
-	"./si": 290,
-	"./si.js": 290,
-	"./sk": 291,
-	"./sk.js": 291,
-	"./sl": 292,
-	"./sl.js": 292,
-	"./sq": 293,
-	"./sq.js": 293,
-	"./sr": 294,
-	"./sr-cyrl": 295,
-	"./sr-cyrl.js": 295,
-	"./sr.js": 294,
-	"./ss": 296,
-	"./ss.js": 296,
-	"./sv": 297,
-	"./sv.js": 297,
-	"./sw": 298,
-	"./sw.js": 298,
-	"./ta": 299,
-	"./ta.js": 299,
-	"./te": 300,
-	"./te.js": 300,
-	"./tet": 301,
-	"./tet.js": 301,
-	"./tg": 302,
-	"./tg.js": 302,
-	"./th": 303,
-	"./th.js": 303,
-	"./tl-ph": 304,
-	"./tl-ph.js": 304,
-	"./tlh": 305,
-	"./tlh.js": 305,
-	"./tr": 306,
-	"./tr.js": 306,
-	"./tzl": 307,
-	"./tzl.js": 307,
-	"./tzm": 308,
-	"./tzm-latn": 309,
-	"./tzm-latn.js": 309,
-	"./tzm.js": 308,
-	"./ug-cn": 310,
-	"./ug-cn.js": 310,
-	"./uk": 311,
-	"./uk.js": 311,
-	"./ur": 312,
-	"./ur.js": 312,
-	"./uz": 313,
-	"./uz-latn": 314,
-	"./uz-latn.js": 314,
-	"./uz.js": 313,
-	"./vi": 315,
-	"./vi.js": 315,
-	"./x-pseudo": 316,
-	"./x-pseudo.js": 316,
-	"./yo": 317,
-	"./yo.js": 317,
-	"./zh-cn": 318,
-	"./zh-cn.js": 318,
-	"./zh-hk": 319,
-	"./zh-hk.js": 319,
-	"./zh-tw": 320,
-	"./zh-tw.js": 320
+	"./af": 197,
+	"./af.js": 197,
+	"./ar": 198,
+	"./ar-dz": 199,
+	"./ar-dz.js": 199,
+	"./ar-kw": 200,
+	"./ar-kw.js": 200,
+	"./ar-ly": 201,
+	"./ar-ly.js": 201,
+	"./ar-ma": 202,
+	"./ar-ma.js": 202,
+	"./ar-sa": 203,
+	"./ar-sa.js": 203,
+	"./ar-tn": 204,
+	"./ar-tn.js": 204,
+	"./ar.js": 198,
+	"./az": 205,
+	"./az.js": 205,
+	"./be": 206,
+	"./be.js": 206,
+	"./bg": 207,
+	"./bg.js": 207,
+	"./bm": 208,
+	"./bm.js": 208,
+	"./bn": 209,
+	"./bn.js": 209,
+	"./bo": 210,
+	"./bo.js": 210,
+	"./br": 211,
+	"./br.js": 211,
+	"./bs": 212,
+	"./bs.js": 212,
+	"./ca": 213,
+	"./ca.js": 213,
+	"./cs": 214,
+	"./cs.js": 214,
+	"./cv": 215,
+	"./cv.js": 215,
+	"./cy": 216,
+	"./cy.js": 216,
+	"./da": 217,
+	"./da.js": 217,
+	"./de": 218,
+	"./de-at": 219,
+	"./de-at.js": 219,
+	"./de-ch": 220,
+	"./de-ch.js": 220,
+	"./de.js": 218,
+	"./dv": 221,
+	"./dv.js": 221,
+	"./el": 222,
+	"./el.js": 222,
+	"./en-au": 223,
+	"./en-au.js": 223,
+	"./en-ca": 224,
+	"./en-ca.js": 224,
+	"./en-gb": 225,
+	"./en-gb.js": 225,
+	"./en-ie": 226,
+	"./en-ie.js": 226,
+	"./en-il": 227,
+	"./en-il.js": 227,
+	"./en-nz": 228,
+	"./en-nz.js": 228,
+	"./eo": 229,
+	"./eo.js": 229,
+	"./es": 230,
+	"./es-do": 231,
+	"./es-do.js": 231,
+	"./es-us": 232,
+	"./es-us.js": 232,
+	"./es.js": 230,
+	"./et": 233,
+	"./et.js": 233,
+	"./eu": 234,
+	"./eu.js": 234,
+	"./fa": 235,
+	"./fa.js": 235,
+	"./fi": 236,
+	"./fi.js": 236,
+	"./fo": 237,
+	"./fo.js": 237,
+	"./fr": 238,
+	"./fr-ca": 239,
+	"./fr-ca.js": 239,
+	"./fr-ch": 240,
+	"./fr-ch.js": 240,
+	"./fr.js": 238,
+	"./fy": 241,
+	"./fy.js": 241,
+	"./gd": 242,
+	"./gd.js": 242,
+	"./gl": 243,
+	"./gl.js": 243,
+	"./gom-latn": 244,
+	"./gom-latn.js": 244,
+	"./gu": 245,
+	"./gu.js": 245,
+	"./he": 246,
+	"./he.js": 246,
+	"./hi": 247,
+	"./hi.js": 247,
+	"./hr": 248,
+	"./hr.js": 248,
+	"./hu": 249,
+	"./hu.js": 249,
+	"./hy-am": 250,
+	"./hy-am.js": 250,
+	"./id": 251,
+	"./id.js": 251,
+	"./is": 252,
+	"./is.js": 252,
+	"./it": 253,
+	"./it.js": 253,
+	"./ja": 254,
+	"./ja.js": 254,
+	"./jv": 255,
+	"./jv.js": 255,
+	"./ka": 256,
+	"./ka.js": 256,
+	"./kk": 257,
+	"./kk.js": 257,
+	"./km": 258,
+	"./km.js": 258,
+	"./kn": 259,
+	"./kn.js": 259,
+	"./ko": 260,
+	"./ko.js": 260,
+	"./ky": 261,
+	"./ky.js": 261,
+	"./lb": 262,
+	"./lb.js": 262,
+	"./lo": 263,
+	"./lo.js": 263,
+	"./lt": 264,
+	"./lt.js": 264,
+	"./lv": 265,
+	"./lv.js": 265,
+	"./me": 266,
+	"./me.js": 266,
+	"./mi": 267,
+	"./mi.js": 267,
+	"./mk": 268,
+	"./mk.js": 268,
+	"./ml": 269,
+	"./ml.js": 269,
+	"./mn": 270,
+	"./mn.js": 270,
+	"./mr": 271,
+	"./mr.js": 271,
+	"./ms": 272,
+	"./ms-my": 273,
+	"./ms-my.js": 273,
+	"./ms.js": 272,
+	"./mt": 274,
+	"./mt.js": 274,
+	"./my": 275,
+	"./my.js": 275,
+	"./nb": 276,
+	"./nb.js": 276,
+	"./ne": 277,
+	"./ne.js": 277,
+	"./nl": 278,
+	"./nl-be": 279,
+	"./nl-be.js": 279,
+	"./nl.js": 278,
+	"./nn": 280,
+	"./nn.js": 280,
+	"./pa-in": 281,
+	"./pa-in.js": 281,
+	"./pl": 282,
+	"./pl.js": 282,
+	"./pt": 283,
+	"./pt-br": 284,
+	"./pt-br.js": 284,
+	"./pt.js": 283,
+	"./ro": 285,
+	"./ro.js": 285,
+	"./ru": 286,
+	"./ru.js": 286,
+	"./sd": 287,
+	"./sd.js": 287,
+	"./se": 288,
+	"./se.js": 288,
+	"./si": 289,
+	"./si.js": 289,
+	"./sk": 290,
+	"./sk.js": 290,
+	"./sl": 291,
+	"./sl.js": 291,
+	"./sq": 292,
+	"./sq.js": 292,
+	"./sr": 293,
+	"./sr-cyrl": 294,
+	"./sr-cyrl.js": 294,
+	"./sr.js": 293,
+	"./ss": 295,
+	"./ss.js": 295,
+	"./sv": 296,
+	"./sv.js": 296,
+	"./sw": 297,
+	"./sw.js": 297,
+	"./ta": 298,
+	"./ta.js": 298,
+	"./te": 299,
+	"./te.js": 299,
+	"./tet": 300,
+	"./tet.js": 300,
+	"./tg": 301,
+	"./tg.js": 301,
+	"./th": 302,
+	"./th.js": 302,
+	"./tl-ph": 303,
+	"./tl-ph.js": 303,
+	"./tlh": 304,
+	"./tlh.js": 304,
+	"./tr": 305,
+	"./tr.js": 305,
+	"./tzl": 306,
+	"./tzl.js": 306,
+	"./tzm": 307,
+	"./tzm-latn": 308,
+	"./tzm-latn.js": 308,
+	"./tzm.js": 307,
+	"./ug-cn": 309,
+	"./ug-cn.js": 309,
+	"./uk": 310,
+	"./uk.js": 310,
+	"./ur": 311,
+	"./ur.js": 311,
+	"./uz": 312,
+	"./uz-latn": 313,
+	"./uz-latn.js": 313,
+	"./uz.js": 312,
+	"./vi": 314,
+	"./vi.js": 314,
+	"./x-pseudo": 315,
+	"./x-pseudo.js": 315,
+	"./yo": 316,
+	"./yo.js": 316,
+	"./zh-cn": 317,
+	"./zh-cn.js": 317,
+	"./zh-hk": 318,
+	"./zh-hk.js": 318,
+	"./zh-tw": 319,
+	"./zh-tw.js": 319
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));

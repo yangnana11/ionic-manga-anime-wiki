@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser'
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular'
 import { MyApp } from './app.component'
 
-import { ContactPage } from '../pages/contact/contact'
 import { HomePage } from '../pages/home/home'
 import { TabsPage } from '../pages/tabs/tabs'
 
@@ -11,12 +10,13 @@ import { StatusBar } from '@ionic-native/status-bar'
 import { SplashScreen } from '@ionic-native/splash-screen'
 import { ShelfPage } from '../pages/shelf/shelf'
 import { CollectionPage } from '../pages/collection/collection'
+import { SearchPage } from '../pages/search/search'
 
 @NgModule({
     declarations: [
         MyApp,
         CollectionPage,
-        ContactPage,
+        SearchPage,
         HomePage,
         TabsPage,
         ShelfPage
@@ -29,7 +29,7 @@ import { CollectionPage } from '../pages/collection/collection'
     entryComponents: [
         MyApp,
         CollectionPage,
-        ContactPage,
+        SearchPage,
         HomePage,
         TabsPage,
         ShelfPage
