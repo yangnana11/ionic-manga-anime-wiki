@@ -1,5 +1,6 @@
 import { Component } from '@angular/core'
 import { NavController, Platform } from 'ionic-angular'
+import { ListPage } from '../list/list'
 
 @Component({
     selector: 'page-search',
@@ -16,6 +17,10 @@ export class SearchPage {
     otherGenre
     inactive: string = 'inactive'
     explore: string = 'explore-wrap'
+    listPage: Object
+    listParam1: any
+    listParam2: any
+    listParam3: any
 
     constructor (
         public navCtrl: NavController,
@@ -337,11 +342,28 @@ export class SearchPage {
                 yAxis: '100px'
             }
         ]
+        this.listPage = ListPage
+        this.listParam1 = {
+            id: 0,
+            title: 'Most read this week'
+        }
+        this.listParam2 = {
+            id: 1,
+            title: 'New release this month'
+        }
+        this.listParam3 = {
+            id: 2,
+            title: 'new release this year'
+        }
     }
 
     showAllGenre() {
         this.inactive = 'item';
         this.explore='inactive';
+    }
+
+    seeAll() {
+        this.navCtrl.push(ListPage);
     }
 
 }

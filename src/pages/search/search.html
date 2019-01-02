@@ -46,7 +46,7 @@
     </div>
     <div class="most-read" padding>
         <div class="title-left">most read this week</div>
-        <div class="title-right">see all</div>
+        <div class="title-right" [navPush]="listPage" [navParams]="listParam1">see all</div>
 
         <ion-slides class="most-list" slidesPerView="3" spaceBetween="10">
 
