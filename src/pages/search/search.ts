@@ -8,6 +8,9 @@ import { NavController, Platform } from 'ionic-angular'
 export class SearchPage {
     congrat
     mustReadAll
+    mustReadMonth
+    newMonth
+    newYear
     width
     popularGenre
     otherGenre
@@ -155,6 +158,183 @@ export class SearchPage {
                 image: 'assets/imgs/thumbnail-duckling-3.jpg',
                 author: 'One',
                 genre: 'Shounen'
+            }
+        ]
+        this.mustReadMonth = [
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-totoro.png',
+                author: 'One',
+                xAxis: imgMargin + 'px',
+                yAxis: '0px',
+
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-duckling-1.jpg',
+                author: 'One',
+                xAxis: imgMargin + 'px',
+                yAxis: '100px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-kitten-1.jpg',
+                author: 'One',
+                xAxis: this.width / 5 + imgMargin + 'px',
+                yAxis: '50px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-duckling-2.jpg',
+                author: 'One',
+                xAxis: this.width * 2 / 5 + imgMargin + 'px',
+                yAxis: '0px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-kitten-2.jpg',
+                author: 'One',
+                xAxis: this.width * 2 / 5 + imgMargin + 'px',
+                yAxis: '100px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-duckling-3.jpg',
+                author: 'One',
+                xAxis: this.width * 3 / 5 + imgMargin + 'px',
+                yAxis: '50px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-kitten-3.jpg',
+                author: 'One',
+                xAxis: this.width * 4 / 5 + imgMargin + 'px',
+                yAxis: '0px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-puppy-1.jpg',
+                author: 'One',
+                xAxis: this.width * 4 / 5 + imgMargin + 'px',
+                yAxis: '100px'
+            }
+        ]
+        this.newMonth = [
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-totoro.png',
+                author: 'One',
+                xAxis: imgMargin + 'px',
+                yAxis: '0px',
+
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-duckling-1.jpg',
+                author: 'One',
+                xAxis: imgMargin + 'px',
+                yAxis: '100px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-kitten-1.jpg',
+                author: 'One',
+                xAxis: this.width / 5 + imgMargin + 'px',
+                yAxis: '50px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-duckling-2.jpg',
+                author: 'One',
+                xAxis: this.width * 2 / 5 + imgMargin + 'px',
+                yAxis: '0px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-kitten-2.jpg',
+                author: 'One',
+                xAxis: this.width * 2 / 5 + imgMargin + 'px',
+                yAxis: '100px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-duckling-3.jpg',
+                author: 'One',
+                xAxis: this.width * 3 / 5 + imgMargin + 'px',
+                yAxis: '50px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-kitten-3.jpg',
+                author: 'One',
+                xAxis: this.width * 4 / 5 + imgMargin + 'px',
+                yAxis: '0px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-puppy-1.jpg',
+                author: 'One',
+                xAxis: this.width * 4 / 5 + imgMargin + 'px',
+                yAxis: '100px'
+            }
+        ]
+        this.newYear = [
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-totoro.png',
+                author: 'One',
+                xAxis: imgMargin + 'px',
+                yAxis: '0px',
+
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-duckling-1.jpg',
+                author: 'One',
+                xAxis: imgMargin + 'px',
+                yAxis: '100px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-kitten-1.jpg',
+                author: 'One',
+                xAxis: this.width / 5 + imgMargin + 'px',
+                yAxis: '50px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-duckling-2.jpg',
+                author: 'One',
+                xAxis: this.width * 2 / 5 + imgMargin + 'px',
+                yAxis: '0px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-kitten-2.jpg',
+                author: 'One',
+                xAxis: this.width * 2 / 5 + imgMargin + 'px',
+                yAxis: '100px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-duckling-3.jpg',
+                author: 'One',
+                xAxis: this.width * 3 / 5 + imgMargin + 'px',
+                yAxis: '50px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-kitten-3.jpg',
+                author: 'One',
+                xAxis: this.width * 4 / 5 + imgMargin + 'px',
+                yAxis: '0px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-puppy-1.jpg',
+                author: 'One',
+                xAxis: this.width * 4 / 5 + imgMargin + 'px',
+                yAxis: '100px'
             }
         ]
     }

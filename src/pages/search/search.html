@@ -44,4 +44,42 @@
             <button class="explore" (click)="showAllGenre()">explore all genres</button>
         </div>
     </div>
+    <div class="most-read" padding>
+        <div class="title-left">most read this week</div>
+        <div class="title-right">see all</div>
+
+        <ion-slides class="most-list" slidesPerView="3" spaceBetween="10">
+
+            <ion-slide *ngFor="let item of mustReadMonth" class="item-list">
+                <img src="{{item.image}}" alt="">
+            </ion-slide>
+
+        </ion-slides>
+    </div>
+
+    <div class="most-read" padding>
+        <div class="title-left">new release this month</div>
+        <div class="title-right">see all</div>
+
+        <ion-slides class="most-list" slidesPerView="3" spaceBetween="10">
+
+            <ion-slide *ngFor="let item of newMonth" class="item-list">
+                <img src="{{item.image}}" alt="">
+            </ion-slide>
+
+        </ion-slides>
+    </div>
+
+    <div class="most-read" padding>
+        <div class="title-left">new release this year</div>
+        <div class="title-right">see all</div>
+
+        <ion-slides class="most-list" slidesPerView="3" spaceBetween="10">
+
+            <ion-slide *ngFor="let item of newYear" class="item-list">
+                <img src="{{item.image}}" alt="">
+            </ion-slide>
+
+        </ion-slides>
+    </div>
 </ion-content>

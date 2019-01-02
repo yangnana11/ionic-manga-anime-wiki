@@ -88,4 +88,23 @@ page-search {
       }
     }
   }
+  .most-read {
+    .title-left {
+      text-transform: uppercase;
+    }
+    .title-right {
+      text-transform: uppercase;
+      position: absolute;
+      right: 16px;
+      margin-top: -20px;
+    }
+    .most-list {
+      margin-top: 16px;
+      .item-list {
+        img {
+          box-shadow: 3px 1px 5px $border-grey-color;
+        }
+      }
+    }
+  }
 }

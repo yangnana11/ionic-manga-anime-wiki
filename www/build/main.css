@@ -26106,6 +26106,26 @@ page-search .popular-genre .explore-wrap .explore {
   border-radius: 4px;
 }
 
+page-search .most-read .title-left {
+  text-transform: uppercase;
+}
+
+page-search .most-read .title-right {
+  text-transform: uppercase;
+  position: absolute;
+  right: 16px;
+  margin-top: -20px;
+}
+
+page-search .most-read .most-list {
+  margin-top: 16px;
+}
+
+page-search .most-read .most-list .item-list img {
+  -webkit-box-shadow: 3px 1px 5px #d1d1d1;
+  box-shadow: 3px 1px 5px #d1d1d1;
+}
+
 page-shelf .desp-label {
   color: #8c8c8c;
   margin-top: 10px;
