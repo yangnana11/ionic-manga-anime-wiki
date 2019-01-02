@@ -1,29 +1,47 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-searchbar placeholder="Search by title, author or tag"></ion-searchbar>
-  </ion-toolbar>
-  <div class="menu-wrap">
-    <div class="menu-item active">
-      <ion-icon name="apps"></ion-icon>
-      <div>All</div>
+    <ion-toolbar>
+        <ion-searchbar placeholder="Search by title, author or tag"></ion-searchbar>
+    </ion-toolbar>
+    <div class="menu-wrap">
+        <div class="menu-item active">
+            <ion-icon name="apps"></ion-icon>
+            <div>All</div>
+        </div>
+        <div class="menu-item">
+            <ion-icon name="image"></ion-icon>
+            <div>Manga</div>
+        </div>
+        <div class="menu-item">
+            <ion-icon name="videocam"></ion-icon>
+            <div>Anime</div>
+        </div>
+        <div class="menu-item">
+            <ion-icon name="book"></ion-icon>
+            <div>Novel</div>
+        </div>
     </div>
-    <div class="menu-item">
-      <ion-icon name="image"></ion-icon>
-      <div>Manga</div>
-    </div>
-    <div class="menu-item">
-      <ion-icon name="videocam"></ion-icon>
-      <div>Anime</div>
-    </div>
-    <div class="menu-item">
-      <ion-icon name="book"></ion-icon>
-      <div>Novel</div>
-    </div>
-  </div>
 </ion-header>
 
 <ion-content>
-  <div>
-    <img src="{{congrat.image}}" alt="">
-  </div>
+    <div class="top">
+        <div *ngFor="let item of mustReadAll">
+            <img src="{{item.image}}" alt="" [style.left]="item.xAxis" [style.top]="item.yAxis">
+        </div>
+    </div>
+    <div padding class="popular-genre">
+        <div class="title">explore genres by popularity</div>
+        <div class="list">
+            <div *ngFor="let item of popularGenre" class="item">
+                <div class="genre">{{item.genre}}</div>
+                <div class="background" [style.backgroundImage]="'url(' + item.image + ')'"></div>
+            </div>
+            <div *ngFor="let item of otherGenre" class={{inactive}}>
+                <div class="genre">{{item.genre}}</div>
+                <div class="background" [style.backgroundImage]="'url(' + item.image + ')'"></div>
+            </div>
+        </div>
+        <div class={{explore}}>
+            <button class="explore" (click)="showAllGenre()">explore all genres</button>
+        </div>
+    </div>
 </ion-content>

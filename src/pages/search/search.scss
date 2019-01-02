@@ -1,4 +1,7 @@
 page-search {
+  .inactive {
+    display: none;
+  }
   .menu-wrap {
     margin: $margin-left-right $margin-top-bottom;
     display: flex;
@@ -11,6 +14,78 @@ page-search {
     }
     .active {
       color: $label-green-color;
+    }
+  }
+  .top {
+    overflow: hidden;
+    display: none;
+    &:after {
+      content: "";
+      width: 100%;
+      height: 190px;
+      position: absolute;
+      background: url("../../assets/imgs/Blue-Bubble-Wallpapers.jpg");
+      opacity: 0.35;
+      z-index: -1;
+    }
+    img {
+      position: absolute;
+      height: 90px;
+      width: 70px;
+    }
+  }
+  .popular-genre {
+    .title {
+      text-transform: uppercase;
+    }
+    .list {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      .item {
+        border: 1px solid $border-grey-color;
+        border-radius: $border-radius;
+        overflow: hidden;
+        height: 50px;
+        .background {
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          position: absolute;
+          z-index: -1;
+          &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.2);
+          }
+        }
+        .genre {
+          color: white;
+          position: absolute;
+          bottom: 4px;
+          left: 4px;
+        }
+      }
+    }
+    .explore-wrap {
+      margin: 10px auto;
+      width: 200px;
+      .explore {
+        width: 100%;
+        border: 1px solid $border-grey-color;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        text-align: center;
+        background: transparent;
+        border-radius: $border-radius;
+      }
     }
   }
 }

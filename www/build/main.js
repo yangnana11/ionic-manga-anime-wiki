@@ -415,22 +415,160 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var SearchPage = /** @class */ (function () {
-    function SearchPage(navCtrl) {
+    function SearchPage(navCtrl, platform) {
         this.navCtrl = navCtrl;
+        this.platform = platform;
+        this.inactive = 'inactive';
+        this.explore = 'explore-wrap';
+        this.width = platform.width();
+        var imgMargin = (this.width / 5 - 70) / 2;
+        console.log(imgMargin);
         this.congrat = {
             title: 'One Punch Man',
             image: 'assets/imgs/thumbnail-totoro.png',
             author: 'One'
         };
+        this.mustReadAll = [
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-totoro.png',
+                author: 'One',
+                xAxis: imgMargin + 'px',
+                yAxis: '0px',
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-duckling-1.jpg',
+                author: 'One',
+                xAxis: imgMargin + 'px',
+                yAxis: '100px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-kitten-1.jpg',
+                author: 'One',
+                xAxis: this.width / 5 + imgMargin + 'px',
+                yAxis: '50px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-duckling-2.jpg',
+                author: 'One',
+                xAxis: this.width * 2 / 5 + imgMargin + 'px',
+                yAxis: '0px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-kitten-2.jpg',
+                author: 'One',
+                xAxis: this.width * 2 / 5 + imgMargin + 'px',
+                yAxis: '100px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-duckling-3.jpg',
+                author: 'One',
+                xAxis: this.width * 3 / 5 + imgMargin + 'px',
+                yAxis: '50px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-kitten-3.jpg',
+                author: 'One',
+                xAxis: this.width * 4 / 5 + imgMargin + 'px',
+                yAxis: '0px'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-puppy-1.jpg',
+                author: 'One',
+                xAxis: this.width * 4 / 5 + imgMargin + 'px',
+                yAxis: '100px'
+            }
+        ];
+        this.otherGenre = [
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-totoro.png',
+                author: 'One',
+                genre: 'Shojo'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-duckling-1.jpg',
+                author: 'One',
+                genre: 'Mature'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-kitten-1.jpg',
+                author: 'One',
+                genre: 'School'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-duckling-2.jpg',
+                author: 'One',
+                genre: 'Material Art'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-kitten-2.jpg',
+                author: 'One',
+                genre: 'Comedy'
+            }
+        ];
+        this.popularGenre = [
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-totoro.png',
+                author: 'One',
+                genre: 'Action'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-duckling-1.jpg',
+                author: 'One',
+                genre: 'Romance'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-kitten-1.jpg',
+                author: 'One',
+                genre: 'Fantasy'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-duckling-2.jpg',
+                author: 'One',
+                genre: 'Sport'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-kitten-2.jpg',
+                author: 'One',
+                genre: 'Slice of life'
+            },
+            {
+                title: 'One Punch Man',
+                image: 'assets/imgs/thumbnail-duckling-3.jpg',
+                author: 'One',
+                genre: 'Shounen'
+            }
+        ];
     }
+    SearchPage.prototype.showAllGenre = function () {
+        this.inactive = 'item';
+        this.explore = 'inactive';
+    };
     SearchPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-search',template:/*ion-inline-start:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/search/search.html"*/'<ion-header>\n  <ion-toolbar>\n    <ion-searchbar placeholder="Search by title, author or tag"></ion-searchbar>\n  </ion-toolbar>\n  <div class="menu-wrap">\n    <div class="menu-item active">\n      <ion-icon name="apps"></ion-icon>\n      <div>All</div>\n    </div>\n    <div class="menu-item">\n      <ion-icon name="image"></ion-icon>\n      <div>Manga</div>\n    </div>\n    <div class="menu-item">\n      <ion-icon name="videocam"></ion-icon>\n      <div>Anime</div>\n    </div>\n    <div class="menu-item">\n      <ion-icon name="book"></ion-icon>\n      <div>Novel</div>\n    </div>\n  </div>\n</ion-header>\n\n<ion-content>\n  <div>\n    <img src="{{congrat.image}}" alt="">\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/search/search.html"*/
+            selector: 'page-search',template:/*ion-inline-start:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/search/search.html"*/'<ion-header>\n    <ion-toolbar>\n        <ion-searchbar placeholder="Search by title, author or tag"></ion-searchbar>\n    </ion-toolbar>\n    <div class="menu-wrap">\n        <div class="menu-item active">\n            <ion-icon name="apps"></ion-icon>\n            <div>All</div>\n        </div>\n        <div class="menu-item">\n            <ion-icon name="image"></ion-icon>\n            <div>Manga</div>\n        </div>\n        <div class="menu-item">\n            <ion-icon name="videocam"></ion-icon>\n            <div>Anime</div>\n        </div>\n        <div class="menu-item">\n            <ion-icon name="book"></ion-icon>\n            <div>Novel</div>\n        </div>\n    </div>\n</ion-header>\n\n<ion-content>\n    <div class="top">\n        <div *ngFor="let item of mustReadAll">\n            <img src="{{item.image}}" alt="" [style.left]="item.xAxis" [style.top]="item.yAxis">\n        </div>\n    </div>\n    <div padding class="popular-genre">\n        <div class="title">explore genres by popularity</div>\n        <div class="list">\n            <div *ngFor="let item of popularGenre" class="item">\n                <div class="genre">{{item.genre}}</div>\n                <div class="background" [style.backgroundImage]="\'url(\' + item.image + \')\'"></div>\n            </div>\n            <div *ngFor="let item of otherGenre" class={{inactive}}>\n                <div class="genre">{{item.genre}}</div>\n                <div class="background" [style.backgroundImage]="\'url(\' + item.image + \')\'"></div>\n            </div>\n        </div>\n        <div class={{explore}}>\n            <button class="explore" (click)="showAllGenre()">explore all genres</button>\n        </div>\n    </div>\n</ion-content>\n'/*ion-inline-end:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/search/search.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]) === "function" && _b || Object])
     ], SearchPage);
     return SearchPage;
-    var _a;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=search.js.map
