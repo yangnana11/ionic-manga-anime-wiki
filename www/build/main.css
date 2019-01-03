@@ -26000,6 +26000,79 @@ page-home .social {
   padding-left: 10px;
 }
 
+page-list .header-title {
+  text-align: center;
+  margin-left: -55px;
+  position: relative;
+  z-index: -1;
+}
+
+page-list .item-row {
+  padding: 10px;
+  border-bottom: 1px solid #d1d1d1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+page-list .item-row .item-title {
+  font-size: 18px;
+  color: black;
+}
+
+page-list .item-row .item-desp {
+  color: #8c8c8c;
+}
+
+page-list .item-row .item-desp .item-rate-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8px;
+}
+
+page-list .item-row .item-desp .item-rate-row .rate-star-row {
+  white-space: normal;
+  width: 60px;
+  margin-right: 5px;
+  margin-top: 4px;
+}
+
+page-list .item-row .item-desp .item-rate-row .rate-color-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+page-list .item-row .item-desp .item-rate-row .rate-color-group .rate-color {
+  background-color: #449544;
+  height: 11px;
+}
+
+page-list .item-row .item-desp .item-rate-row .rate-color-group .rate-color1 {
+  background-color: #d1d1d1;
+  height: 11px;
+}
+
+page-list .item-row .item-desp .item-rate-row .rate-background {
+  width: 60px;
+  height: 11px;
+  position: absolute;
+  margin-top: -11px;
+}
+
+page-list .item-row .item-desp .item-rate-row * {
+  white-space: pre;
+}
+
+page-list .item-row .img-cover {
+  width: 80px;
+  margin-right: 10px;
+}
+
 page-search .inactive {
   display: none;
 }

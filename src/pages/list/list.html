@@ -6,6 +6,28 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content>
-    Content
+<ion-content padding>
+    <div *ngFor="let item of list" class="item-row">
+        <div>
+            <img src="{{item.image}}" alt="" class="img-cover">
+        </div>
+        <div class="item-desp">
+            <div class="item-title">{{item.title}}</div>
+            <div>by {{item.author}}</div>
+            <div class="item-rate-row">
+                <div class="rate-star-row">
+                    <div class="rate-color-group">
+                        <div class="rate-color" [ngStyle]="{'width': item.star * 100 / 5 + '%'}">
+                        </div>
+                        <div class="rate-color1" [ngStyle]="{'width': (5 - item.star) * 100 / 5 + '%'}">
+                        </div>
+                    </div>
+                    <img src="../../assets/imgs/star2.png" class="rate-background">
+                </div>
+                <div>{{item.star}} • </div>
+                <div>{{item.noRate}} ratings • </div>
+                <div>{{item.publishYear}}</div>
+            </div>
+        </div>
+    </div>
 </ion-content>

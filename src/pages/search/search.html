@@ -59,7 +59,7 @@
 
     <div class="most-read" padding>
         <div class="title-left">new release this month</div>
-        <div class="title-right">see all</div>
+        <div class="title-right" [navPush]="listPage" [navParams]="listParam2">see all</div>
 
         <ion-slides class="most-list" slidesPerView="3" spaceBetween="10">
 
@@ -72,7 +72,7 @@
 
     <div class="most-read" padding>
         <div class="title-left">new release this year</div>
-        <div class="title-right">see all</div>
+        <div class="title-right" [navPush]="listPage" [navParams]="listParam3">see all</div>
 
         <ion-slides class="most-list" slidesPerView="3" spaceBetween="10">
 

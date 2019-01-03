@@ -403,6 +403,7 @@ var CollectionPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_list__ = __webpack_require__(398);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -412,6 +413,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 var SearchPage = /** @class */ (function () {
@@ -730,14 +732,30 @@ var SearchPage = /** @class */ (function () {
                 yAxis: '100px'
             }
         ];
+        this.listPage = __WEBPACK_IMPORTED_MODULE_2__list_list__["a" /* ListPage */];
+        this.listParam1 = {
+            id: 0,
+            title: 'Most read this week'
+        };
+        this.listParam2 = {
+            id: 1,
+            title: 'New release this month'
+        };
+        this.listParam3 = {
+            id: 2,
+            title: 'New release this year'
+        };
     }
     SearchPage.prototype.showAllGenre = function () {
         this.inactive = 'item';
         this.explore = 'inactive';
     };
+    SearchPage.prototype.seeAll = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__list_list__["a" /* ListPage */]);
+    };
     SearchPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-search',template:/*ion-inline-start:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/search/search.html"*/'<ion-header>\n    <ion-toolbar>\n        <ion-searchbar placeholder="Search by title, author or tag"></ion-searchbar>\n    </ion-toolbar>\n    <div class="menu-wrap">\n        <div class="menu-item active">\n            <ion-icon name="apps"></ion-icon>\n            <div>All</div>\n        </div>\n        <div class="menu-item">\n            <ion-icon name="image"></ion-icon>\n            <div>Manga</div>\n        </div>\n        <div class="menu-item">\n            <ion-icon name="videocam"></ion-icon>\n            <div>Anime</div>\n        </div>\n        <div class="menu-item">\n            <ion-icon name="book"></ion-icon>\n            <div>Novel</div>\n        </div>\n    </div>\n</ion-header>\n\n<ion-content>\n    <div class="top">\n        <div *ngFor="let item of mustReadAll">\n            <img src="{{item.image}}" alt="" [style.left]="item.xAxis" [style.top]="item.yAxis">\n        </div>\n    </div>\n    <div padding class="popular-genre">\n        <div class="title">explore genres by popularity</div>\n        <div class="list">\n            <div *ngFor="let item of popularGenre" class="item">\n                <div class="genre">{{item.genre}}</div>\n                <div class="background" [style.backgroundImage]="\'url(\' + item.image + \')\'"></div>\n            </div>\n            <div *ngFor="let item of otherGenre" class={{inactive}}>\n                <div class="genre">{{item.genre}}</div>\n                <div class="background" [style.backgroundImage]="\'url(\' + item.image + \')\'"></div>\n            </div>\n        </div>\n        <div class={{explore}}>\n            <button class="explore" (click)="showAllGenre()">explore all genres</button>\n        </div>\n    </div>\n    <div class="most-read" padding>\n        <div class="title-left">most read this week</div>\n        <div class="title-right">see all</div>\n\n        <ion-slides class="most-list" slidesPerView="3" spaceBetween="10">\n\n            <ion-slide *ngFor="let item of mustReadMonth" class="item-list">\n                <img src="{{item.image}}" alt="">\n            </ion-slide>\n\n        </ion-slides>\n    </div>\n\n    <div class="most-read" padding>\n        <div class="title-left">new release this month</div>\n        <div class="title-right">see all</div>\n\n        <ion-slides class="most-list" slidesPerView="3" spaceBetween="10">\n\n            <ion-slide *ngFor="let item of newMonth" class="item-list">\n                <img src="{{item.image}}" alt="">\n            </ion-slide>\n\n        </ion-slides>\n    </div>\n\n    <div class="most-read" padding>\n        <div class="title-left">new release this year</div>\n        <div class="title-right">see all</div>\n\n        <ion-slides class="most-list" slidesPerView="3" spaceBetween="10">\n\n            <ion-slide *ngFor="let item of newYear" class="item-list">\n                <img src="{{item.image}}" alt="">\n            </ion-slide>\n\n        </ion-slides>\n    </div>\n</ion-content>\n'/*ion-inline-end:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/search/search.html"*/
+            selector: 'page-search',template:/*ion-inline-start:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/search/search.html"*/'<ion-header>\n    <ion-toolbar>\n        <ion-searchbar placeholder="Search by title, author or tag"></ion-searchbar>\n    </ion-toolbar>\n    <div class="menu-wrap">\n        <div class="menu-item active">\n            <ion-icon name="apps"></ion-icon>\n            <div>All</div>\n        </div>\n        <div class="menu-item">\n            <ion-icon name="image"></ion-icon>\n            <div>Manga</div>\n        </div>\n        <div class="menu-item">\n            <ion-icon name="videocam"></ion-icon>\n            <div>Anime</div>\n        </div>\n        <div class="menu-item">\n            <ion-icon name="book"></ion-icon>\n            <div>Novel</div>\n        </div>\n    </div>\n</ion-header>\n\n<ion-content>\n    <div class="top">\n        <div *ngFor="let item of mustReadAll">\n            <img src="{{item.image}}" alt="" [style.left]="item.xAxis" [style.top]="item.yAxis">\n        </div>\n    </div>\n    <div padding class="popular-genre">\n        <div class="title">explore genres by popularity</div>\n        <div class="list">\n            <div *ngFor="let item of popularGenre" class="item">\n                <div class="genre">{{item.genre}}</div>\n                <div class="background" [style.backgroundImage]="\'url(\' + item.image + \')\'"></div>\n            </div>\n            <div *ngFor="let item of otherGenre" class={{inactive}}>\n                <div class="genre">{{item.genre}}</div>\n                <div class="background" [style.backgroundImage]="\'url(\' + item.image + \')\'"></div>\n            </div>\n        </div>\n        <div class={{explore}}>\n            <button class="explore" (click)="showAllGenre()">explore all genres</button>\n        </div>\n    </div>\n    <div class="most-read" padding>\n        <div class="title-left">most read this week</div>\n        <div class="title-right" [navPush]="listPage" [navParams]="listParam1">see all</div>\n\n        <ion-slides class="most-list" slidesPerView="3" spaceBetween="10">\n\n            <ion-slide *ngFor="let item of mustReadMonth" class="item-list">\n                <img src="{{item.image}}" alt="">\n            </ion-slide>\n\n        </ion-slides>\n    </div>\n\n    <div class="most-read" padding>\n        <div class="title-left">new release this month</div>\n        <div class="title-right" [navPush]="listPage" [navParams]="listParam2">see all</div>\n\n        <ion-slides class="most-list" slidesPerView="3" spaceBetween="10">\n\n            <ion-slide *ngFor="let item of newMonth" class="item-list">\n                <img src="{{item.image}}" alt="">\n            </ion-slide>\n\n        </ion-slides>\n    </div>\n\n    <div class="most-read" padding>\n        <div class="title-left">new release this year</div>\n        <div class="title-right" [navPush]="listPage" [navParams]="listParam3">see all</div>\n\n        <ion-slides class="most-list" slidesPerView="3" spaceBetween="10">\n\n            <ion-slide *ngFor="let item of newYear" class="item-list">\n                <img src="{{item.image}}" alt="">\n            </ion-slide>\n\n        </ion-slides>\n    </div>\n</ion-content>\n'/*ion-inline-end:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/search/search.html"*/
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]) === "function" && _b || Object])
     ], SearchPage);
@@ -779,12 +797,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_shelf_shelf__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_collection_collection__ = __webpack_require__(320);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_search_search__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_list_list__ = __webpack_require__(398);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -807,7 +827,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_10__pages_search_search__["a" /* SearchPage */],
                 __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */],
                 __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__["a" /* TabsPage */],
-                __WEBPACK_IMPORTED_MODULE_8__pages_shelf_shelf__["a" /* ShelfPage */]
+                __WEBPACK_IMPORTED_MODULE_8__pages_shelf_shelf__["a" /* ShelfPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_list_list__["a" /* ListPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
@@ -822,7 +843,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_10__pages_search_search__["a" /* SearchPage */],
                 __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */],
                 __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__["a" /* TabsPage */],
-                __WEBPACK_IMPORTED_MODULE_8__pages_shelf_shelf__["a" /* ShelfPage */]
+                __WEBPACK_IMPORTED_MODULE_8__pages_shelf_shelf__["a" /* ShelfPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_list_list__["a" /* ListPage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__["a" /* StatusBar */],
@@ -1150,6 +1172,132 @@ webpackContext.keys = function webpackContextKeys() {
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
 webpackContext.id = 397;
+
+/***/ }),
+
+/***/ 398:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ListPage = /** @class */ (function () {
+    function ListPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.title = this.navParams.get('title');
+        var id = this.navParams.get('id');
+        if (id == 0) {
+            this.list = [
+                {
+                    title: 'One Punch Man',
+                    image: 'assets/imgs/thumbnail-totoro.png',
+                    author: 'One',
+                    publishYear: '1988',
+                    noRate: this.numberWithCommas(1862),
+                    star: 3.75
+                },
+                {
+                    title: 'One Punch Man',
+                    image: 'assets/imgs/thumbnail-totoro.png',
+                    author: 'One',
+                    publishYear: '1988',
+                    noRate: this.numberWithCommas(1862),
+                    star: 3.5
+                },
+                {
+                    title: 'One Punch Man',
+                    image: 'assets/imgs/thumbnail-totoro.png',
+                    author: 'One',
+                    publishYear: '1988',
+                    noRate: this.numberWithCommas(1862),
+                    star: 3
+                }
+            ];
+        }
+        else if (id == 1) {
+            this.list = [
+                {
+                    title: 'Totoro',
+                    image: 'assets/imgs/thumbnail-totoro.png',
+                    author: 'One',
+                    publishYear: '1988',
+                    noRate: this.numberWithCommas(1862),
+                    star: 4.8
+                },
+                {
+                    title: 'Totoro',
+                    image: 'assets/imgs/thumbnail-totoro.png',
+                    author: 'One',
+                    publishYear: '1988',
+                    noRate: this.numberWithCommas(1862),
+                    star: 3
+                },
+                {
+                    title: 'Totoro',
+                    image: 'assets/imgs/thumbnail-totoro.png',
+                    author: 'One',
+                    publishYear: '1988',
+                    noRate: this.numberWithCommas(1862),
+                    star: 4.1
+                }
+            ];
+        }
+        else {
+            this.list = [
+                {
+                    title: 'E.M.C',
+                    image: 'assets/imgs/thumbnail-totoro.png',
+                    author: 'One',
+                    publishYear: '1988',
+                    noRate: this.numberWithCommas(1862),
+                    star: 3
+                },
+                {
+                    title: 'E.M.C',
+                    image: 'assets/imgs/thumbnail-totoro.png',
+                    author: 'One',
+                    publishYear: '1988',
+                    noRate: this.numberWithCommas(1862),
+                    star: 2.9
+                },
+                {
+                    title: 'E.M.C',
+                    image: 'assets/imgs/thumbnail-totoro.png',
+                    author: 'One',
+                    publishYear: '1988',
+                    noRate: this.numberWithCommas(1862),
+                    star: 4.6
+                }
+            ];
+        }
+    }
+    ListPage.prototype.numberWithCommas = function (x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    };
+    ListPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-list',template:/*ion-inline-start:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/list/list.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title class="header-title">\n            {{title}}\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <div *ngFor="let item of list" class="item-row">\n        <div>\n            <img src="{{item.image}}" alt="" class="img-cover">\n        </div>\n        <div class="item-desp">\n            <div class="item-title">{{item.title}}</div>\n            <div>by {{item.author}}</div>\n            <div class="item-rate-row">\n                <div class="rate-star-row">\n                    <div class="rate-color-group">\n                        <div class="rate-color" [ngStyle]="{\'width\': item.star * 100 / 5 + \'%\'}">\n                        </div>\n                        <div class="rate-color1" [ngStyle]="{\'width\': (5 - item.star) * 100 / 5 + \'%\'}">\n                        </div>\n                    </div>\n                    <img src="../../assets/imgs/star2.png" class="rate-background">\n                </div>\n                <div>{{item.star}} • </div>\n                <div>{{item.noRate}} ratings • </div>\n                <div>{{item.publishYear}}</div>\n            </div>\n        </div>\n    </div>\n</ion-content>\n'/*ion-inline-end:"/Users/nana/Documents/own_studying/ionic/ionic-manga-anime-wiki/src/pages/list/list.html"*/
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
+    ], ListPage);
+    return ListPage;
+    var _a, _b;
+}());
+
+//# sourceMappingURL=list.js.map
 
 /***/ })
 

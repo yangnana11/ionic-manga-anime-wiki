@@ -2,5 +2,53 @@ page-list {
   .header-title {
     text-align: center;
     margin-left: -55px;
+    position: relative;
+    z-index: -1;
+  }
+  .item-row {
+    padding: 10px;
+    border-bottom: 1px solid $border-grey-color;
+    display: flex;
+    .item-title {
+      font-size: 18px;
+      color: black;
+    }
+    .item-desp {
+      color: $label-grey-color;
+      .item-rate-row {
+        display: flex;
+        margin-top: 8px;
+        .rate-star-row {
+          white-space: normal; width: 60px;
+          margin-right: 5px;
+          margin-top: 4px;
+        }
+        .rate-color-group {
+          display: flex;
+          .rate-color {
+            background-color: $border-green-color;
+            height: 11px;
+          }
+          .rate-color1 {
+            background-color: $border-grey-color;
+            height: 11px;
+          }
+        }
+        .rate-background {
+          width: 60px;
+          height: 11px;
+          position: absolute;
+          margin-top: -11px;
+          //background-image: url("../../assets/imgs/star1.png");
+        }
+        & * {
+          white-space: pre;
+        }
+      }
+    }
+    .img-cover {
+      width: 80px;
+      margin-right: 10px;
+    }
   }
 }

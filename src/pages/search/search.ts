@@ -353,7 +353,7 @@ export class SearchPage {
         }
         this.listParam3 = {
             id: 2,
-            title: 'new release this year'
+            title: 'New release this year'
         }
     }
 
