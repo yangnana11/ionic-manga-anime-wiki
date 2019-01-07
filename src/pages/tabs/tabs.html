@@ -2,6 +2,6 @@
   <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>
   <ion-tab [root]="tab2Root" tabTitle="My Shelves" tabIcon="book"></ion-tab>
   <ion-tab [root]="tab3Root" tabTitle="Search" tabIcon="search"></ion-tab>
-  <ion-tab [root]="tab3Root" tabTitle="Scan" tabIcon="barcode"></ion-tab>
-  <ion-tab [root]="tab3Root" tabTitle="More" tabIcon="menu"></ion-tab>
+  <ion-tab [root]="tab4Root" [tabBadge]="badge > 0 ? badge : null" tabBadgeStyle="danger" tabTitle="More" tabIcon="menu">
+  </ion-tab>
 </ion-tabs>

@@ -12,6 +12,7 @@ import { ShelfPage } from '../pages/shelf/shelf'
 import { CollectionPage } from '../pages/collection/collection'
 import { SearchPage } from '../pages/search/search'
 import { ListPage } from '../pages/list/list'
+import { MorePage } from '../pages/more/more'
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { ListPage } from '../pages/list/list'
         HomePage,
         TabsPage,
         ShelfPage,
-        ListPage
+        ListPage,
+        MorePage
     ],
     imports: [
         BrowserModule,
@@ -35,7 +37,8 @@ import { ListPage } from '../pages/list/list'
         HomePage,
         TabsPage,
         ShelfPage,
-        ListPage
+        ListPage,
+        MorePage
     ],
     providers: [
         StatusBar,

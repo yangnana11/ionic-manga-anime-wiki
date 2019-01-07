@@ -1,0 +1,22 @@
+page-more {
+  .img-avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  .info-section {
+    display: flex;
+    .info-detail {
+      margin-top: 5px;
+      line-height: 20px;
+      justify-content: center;
+      .info-nickname {
+        font-size: 18px;
+      }
+      .info-series {
+        color: $label-green-color;
+      }
+    }
+  }
+}
